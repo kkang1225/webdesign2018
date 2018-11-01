@@ -1,0 +1,178 @@
+@charset "utf-8";
+body{background:url(../images/배경.jpg) no-repeat;background-size:cover;}
+.clearfix:after{content:"";display:block;clear:both;}
+#container_wrap{margin:0 auto;}
+/*header_start*/
+#header_wrap{width:100%;height:90px;background:url(../images/04비행기.jpg) no-repeat;
+	background-size:cover;}
+.header{width:980px;height:90px;margin:0 auto;;padding-top:15px;position:relative;}
+.header .logo a{font-size:30px;color:#fff;}
+.header h3{font-weight:normal;font-size:16px;margin-left:40px;}
+.header h3 a{color:#fff;letter-spacing:5px;}
+.header img{width:37px;height:33px;float:left;}
+
+.header form{width:300px;position:absolute;top:30px;left:240px;}
+.header .sch_input{width:100%;height:30px;border:0;border-radius:20px;
+	padding:0 40px 0 20px;font-weight:bold;}
+.header .sch_btn{width:30px;height:30px;position:absolute;right:0;top:0;border:0;
+	background:none;padding:0 30px;cursor:pointer;}
+.header .tel{font-weight:normal;font-size:23px;color:#fff;position:absolute;
+	top:30px;right:180px;line-height:23px;padding:0 20px;text-align:center;}
+.header ul{position:absolute;top:27px;right:0;}
+.header li{float:left;}
+.header li a{display:block;padding:3px;}
+/*header_end*/
+
+/*gnb_start*/
+#gnb{width:100%;background:#fff;}
+#gnb .main_gnb{width:980px;height:60px;margin:0 auto;}
+.main_gnb ul{position:relative;}
+.main_gnb li{float:left;border-left:2px solid #ebebeb;}
+.main_gnb li:last-child{border-right:2px solid #ebebeb;}
+.main_gnb i{color:#f84816;position:absolute;top:10px;}
+.main_gnb a{display:block;width:161px;line-height:60px;text-align:center;}
+.main_gnb a:hover{background:#f8f8ff;font-weight:bold;}
+/*gnb_end*/
+
+/*container_start*/
+#container_wrap{width:100%;margin:0 auto;}
+.container{width:980px;height:300px;margin:120px auto;position:relative;}
+.box01{width:497px;height:300px;}
+.tab_menu{float:left;}
+.tab_menu a{display:block;width:150px;height:75px;line-height:75px;text-align:justify;
+	background:#0099cb;font-weight:bold;color:#fff;border-top:1px solid #898989;padding-left:20px;}
+.tab_menu li:first-child a{border-top:none;background:#fff;color:#000;}
+.tab_menu i{padding:0 10px;}
+.tab_menu li:first-child a i{color:#0066a6;;}
+.tab_menu a:hover{background:#fff;color:#000;}
+.tab_menu a:hover i{color:#0066a6;}
+
+#hidden_menu{width:340px;height:300px;float:left;background:#fff;position: relative;}
+.hidden{padding-left:20px;}
+.hidden li{padding-top:20px;}
+
+.hidden{width:100%;}
+.hidden > li{overflow: hidden;}
+.hidden > li > div{float: left;padding:0 10px;}
+
+.hidden > li:nth-child(1) >div>label{display: block;width:100%;}
+.hidden label{display: block;width:100%;margin-bottom:5px;}
+.hidden input{width:100%;height:30px;padding:5px;border-radius:5px;border: 2px solid #ccc;}
+.hidden select{border-radius:5px;border:2px solid #ccc;padding: 4px 3px;}
+
+.hidden > li:nth-child(1) > div{width:100%;}
+.hidden > li:nth-child(2) > div{width:50%;_background: #000;}
+.hidden > li:nth-child(3) > div{width:33.33%;_background: #000;}
+
+
+
+
+
+/*.hidden .title{font-weight:bold;}
+.hidden #country{width:277px;height:35px;padding:0 10px;border:0;background:#ebebeb;}
+#country,#departure,#arrival,#grade,#adult,#child{border-radius:3px;}
+#departure,#grade{float:left;}
+#arrival{margin-left:20px;}
+#adult,#child{width:56px;height:33px;float:left;position: absolute;bottom:40px;}
+#adult{padding:0 10px;right:20px;}
+#child{right:50px;}*/
+
+
+
+.btn{width:278px;height:36px;border:none;border-radius:3px;font-weight:bold;
+	background:#ea4f1f;color:#fff;position:absolute;bottom:20px;left:30px;cursor:pointer;}
+
+.text{float:right;position:absolute;right:120px;top:0;}
+.text h1{font-size:55px;}
+.text h2{font-weight:normal;}
+
+/*card01*/
+.card{width:980px;height:750px;margin:0 auto;margin-top:-105px;font-weight:bold;}
+.card01{width:100%;}
+.card01 div{float:left;width:233px;height:240px;margin-right:15px;}
+.card01 div:last-child{margin:0;}
+.france{overflow:hidden;background:url(../images/03여행01.jpg);position:relative;}
+.card01 .explain{width:233px;height:45px;background:#152630;
+	position:absolute;bottom:-45px;opacity:0;transition:0.5s;}
+.france a,.japan a{display:block;text-align:center;line-height:45px;color:#fff;float:left;
+padding:0 12px;}
+.france a:nth-child(2),.japan a:nth-child(2){color:#589c57;}
+.japan{background:url(../images/03여행02.jpg);position:relative;overflow:hidden;}
+.france:hover .explain,.japan:hover .explain{display:block;bottom:0;opacity:1;}
+
+/*card02*/
+.card02{width:100%;margin-top:15px;}
+.card02 div{float:left;width:233px;height:240px;margin-right:15px;}
+.card02 div:last-child{margin:0;}
+
+.hotel{background:url(../images/03여행03.jpg);position:relative;}
+.hotel .explain3{width:233px;height:60px;background:#529351;position:absolute;bottom:-60px;
+	opacity:0;transition:0.7s;}
+.hotel:hover .explain3{bottom:0;opacity:1;}
+.card02 .explain{width:233px;height:60px;background:#152630;
+	position:absolute;bottom:-60px;opacity:0;transition:0.7s;}
+.disney{background:url(../images/03여행04.jpg);position:relative;}
+.disney:hover .explain{bottom:0;opacity:1;}
+.hotel a,.disney a{display:block;text-align:justify;color:#fff;line-height:20px;padding:0 12px;}
+.hotel a:first-child,.disney a:first-child,.weather a:first-child,
+.review a:first-child{margin-top:10px;}
+
+.card02 .explain5{width:233px;height:60px;background:rgba(0,0,0,0.7);position:absolute;bottom:-60px;
+	opacity:0;transition:0.7s;}
+.weather{background:url(../images/03여행05.jpg);position:relative;}
+.weather a{display:block;text-align:justify;color:#fff;padding:0 12px;}
+.weather a:last-child{font-size:14px;color:#83828a;}
+.weather p{text-align:center;color:#fff;margin-top:15px;}
+.weather:hover .explain5{bottom:0;opacity:1;}
+
+.review{background:url(../images/03여행06.jpg);position:relative;}
+.review p{text-align:justify;font-size:15px;margin-left:7px;}
+.review p:first-child,.review p:nth-child(2){margin-top:15px;}
+.review p:nth-child(2){font-size:12px;color:#44619d;}
+.review p:last-child{font-size:12px;color:#e1a302;}
+.review .explain6{width:233px;height:60px;background:#44619d;position:absolute;bottom:-60px;
+	opacity:0;transition:0.7s;}
+.review a{display:block;color:#fff;padding:0 12px;}
+.hotel a:last-child,.disney a:last-child,.review a:last-child{font-size:13px;}
+.review a:last-child{color:#becfeb;}
+.review:hover .explain6{bottom:0;opacity:1;}
+
+/*card03*/
+.card03{width:100%;margin-top:15px;}
+.card03 div{float:left;width:233px;height:240px;margin-right:15px;}
+.card03 div:last-child{margin:0;}
+.information{background:url(../images/03여행07.jpg);position:relative;}
+.information_box{width:233px;height:240px;background:rgba(0,192,243,0.3);opacity:0;transition:0.7s;}
+.information img{width:40px;height:42px;margin-top:15px;margin-left:52px;}
+.information a,.reviewer a{display:block;color:#fff;position:absolute;left:97px;top:25px;font-size:18px;}
+.information p,.food p,.stay p,.reviewer p{color:#fff;text-align:center;font-size:14px;font-weight:normal;}
+.information .plus,.reviewer i{color:#fff;font-size:35px;top:105px;}
+.information:hover .information_box{opacity:1;}
+
+.food{background:url(../images/03여행08.jpg);position:relative;}
+.food_box{background:rgba(21,38,48,0.7);opacity:0;transition:0.7s;}
+.food i,.stay i{color:#fff;font-size:18px;position:absolute;left:70px;bottom:75px;}
+.food i:first-child,.stay i:first-child{color:#fff;font-size:35px;bottom:27px;left:5px;}
+.food a,.stay a{display:block;color:#fff;position:absolute;left:95px;bottom:73px;font-size:18px;}
+.food p,.stay p{position:absolute;bottom:30px;left:20px;}
+.stay{background:url(../images/03여행09.jpg);position:relative;}
+.stay_box{background:rgba(37,28,26,0.7);opacity:0;transition:0.7s;}
+.food:hover .food_box{opacity:1;}
+.stay:hover .stay_box{opacity:1;}
+
+.reviewer{background:url(../images/03여행10.jpg);position:relative;}
+.reviewer_box{background:rgba(130,202,156,0.8);opacity:0;transition:0.7s;}
+.reviewer img{width:32px;height:40px;margin-top:15px;margin-left:55px;}
+.reviewer a{left:90px;}
+.reviewer i{position:absolute;left:10px;top:80px;}
+.reviewer:hover .reviewer_box{opacity:1;}
+/*container_end;*/
+
+/*footer_start*/
+#footer_wrap{width:100%;background:#fff;}
+.main_footer{width:980px;height:115px;margin:0px auto;padding-top:30px;}
+.footer a{padding:0 10px;font-size:14px;font-weight:bold;}
+.footer a:first-child{padding:0;}
+.bottom{margin-top:15px;}
+.bottom p{font-size:12px;}
+/*footer_end;*/

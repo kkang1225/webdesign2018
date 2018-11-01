@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float layer</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a:link,a:visited{color:#000;}
+		a{text-decoration:none;}
+		body{font:12px/1.5 "굴림",Gulim;margin:10px;}
+
+		#container{width:1000px;background:skyblue;/*overflow:hidden;*/margin:0 auto;}
+		#container:after{content:"";display:block;clear:both;}
+		.menu{width:200px;padding:10px;float:left;}
+		.content{width:700px;padding:10px;border-left:1px solid #ccc;float:right;}
+		.active{font-size:16px;font-weight:bold;color:deeppink !important;}
+		
+
+	</style>
+</head>
+<body>
+	<!-- div>#container>(div.menu>ul>li*3>a[href=""]>{menu$})+(div.content>p>lorem20)^div.footer>address>{&copy;2018 Copyright All right reserved.} -->
+	<div>
+		<div id="container">
+			<div class="menu">
+				<ul>
+					<li><a href="menu1.html">회사소개</a></li>
+					<li><a href="menu2.html" class="active">제품안내</a></li>
+					<li><a href="menu3.html">커뮤니티</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolores repudiandae accusamus corporis ad beatae consequatur facere, cum voluptate architecto repellat provident enim quia, nisi deserunt sequi? Fuga saepe velit, veritatis ratione quam aliquam quia reprehenderit, deserunt architecto magni necessitatibus sint, accusantium voluptatibus eos ea assumenda alias tenetur harum! Qui, id! Beatae omnis unde sint vel ipsam a perferendis, numquam ut. Odio quod maiores, id quae iste obcaecati praesentium, voluptatem accusamus fugit at, nesciunt totam harum ipsum cum repellat dolore. Ullam nobis explicabo quo provident voluptatum labore aut voluptas omnis amet. Necessitatibus voluptatibus dolorum incidunt voluptate laborum veritatis tempora soluta at! Consequatur aliquam sunt nulla corrupti odit qui, earum accusamus nesciunt illum similique, nemo, officia ut, cupiditate? Et, delectus. Libero dolorem eaque animi fuga unde, possimus dolor nobis explicabo qui, a, doloribus atque. Dolor ipsam labore rerum fugit. Ut pariatur recusandae nemo eaque quasi non delectus, consectetur in alias perspiciatis impedit velit sed error aliquam officia laudantium, excepturi, blanditiis consequuntur. Totam inventore, quas assumenda ea, libero ipsam natus sequi vel perspiciatis obcaecati sit pariatur in molestias, harum aut. Obcaecati, tempora libero dignissimos quidem ratione, animi officia earum, cupiditate, repudiandae sequi eos. Assumenda ipsum voluptatibus odit voluptates recusandae dicta reiciendis amet.</p>
+			</div>
+		</div>
+		<div class="footer">
+			<address>&copy;2018 Copyright All right reserved.</address>
+		</div>
+	</div>
+</body>
+</html>

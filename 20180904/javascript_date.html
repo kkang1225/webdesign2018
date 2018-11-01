@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>javascript_date</title>
+</head>
+<body>
+	<p id="clock"></p>
+	<!-- <p id="d1"></p>
+	<p id="d2"></p>
+	<p id="d3"></p>
+	<p id="d4"></p> -->
+	<script>
+		function clock(){
+			var toDay = new Date();
+			var hour = toDay.getHours();
+			var minute = toDay.getMinutes();
+			var second = toDay.getSeconds();
+
+			document.getElementById("clock").innerHTML=hour+"시 "+minute+"분 "+second+"초";
+
+			var ttime=setInterval(clock,1000);	
+		};
+		
+		clock();
+
+
+		// var toDay = new Date();
+		// document.getElementById("d1").innerHTML = toDay.getFullYear()+"년";
+		// document.getElementById("d2").innerHTML = toDay.getMonth()+1+"월 "+toDay.getDate()+"일";
+		// document.getElementById("d3").innerHTML = toDay.getHours()+"시 "+toDay.getMinutes()+"분 "+toDay.getSeconds()+"초";
+		
+		//document.write(toDay);
+	</script>
+</body>
+</html>

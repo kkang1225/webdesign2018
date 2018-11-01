@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>rolling_banner</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		img{width:100px;}
+		#banner_wrap{width:450px;height:75px;position:relative;margin:20px auto;}
+		.frame{width:400px;position:relative;overflow:hidden;}
+		#bannerList:after{content:"";display:block;clear:both;}
+		#bannerList{width:1200px;position:relative;left:0px;}
+		#bannerList li{float:left;width:100px;}
+		#bannerList a{display:block;}
+		.leftBtn{position:absolute;top:10px;right:5px;}
+		.rightBtn{position:absolute;top:40px;right:5px;}
+	</style>
+	<script>
+		var num=0;
+		var colWidth=-400;
+		function mvBanner(whichBtn){
+			
+			if(whichBtn == "leftBtn"){
+				num--;
+				if(num<0) num=2;
+				
+				var xPos=num *colWidth;
+				document.getElementById("bannerList").style.left= xPos + "px";
+			}else{
+				num++;
+				if(num>2) num=0;
+				var xPos=num *colWidth;
+				document.getElementById("bannerList").style.left= xPos + "px";
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="banner_wrap">
+		<div class="frame">
+			<ul id="bannerList">
+				<li><a href="#"><img src="../images/img1.jpg" alt="banner1"></a></li>
+				<li><a href="#"><img src="../images/img2.jpg" alt="banner2"></a></li>
+				<li><a href="#"><img src="../images/img3.jpg" alt="banner3"></a></li>
+				<li><a href="#"><img src="../images/img4.jpg" alt="banner4"></a></li>
+				<li><a href="#"><img src="../images/img5.jpg" alt="banner5"></a></li>
+				<li><a href="#"><img src="../images/img6.jpg" alt="banner6"></a></li>
+				<li><a href="#"><img src="../images/img7.jpg" alt="banner7"></a></li>
+				<li><a href="#"><img src="../images/up.jpg" alt="banner8"></a></li>
+				<li><a href="#"><img src="../images/up.jpg" alt="banner9"></a></li>
+				<li><a href="#"><img src="../images/up.jpg" alt="banner10"></a></li>
+				<li><a href="#"><img src="../images/up.jpg" alt="banner11"></a></li>
+				<li><a href="#"><img src="../images/up.jpg" alt="banner12"></a></li>
+			</ul>
+		</div>
+		<a href="#" harf="javascirpt:void(0)" class="leftBtn" onclick="return mvBanner('leftBtn')">이전</a>
+		<a href="#" harf="javascirpt:void(0)" class="rightBtn" onclick="return mvBanner('rightBtn')">다음</a>
+	</div>
+</body>
+</html>

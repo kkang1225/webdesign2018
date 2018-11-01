@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>create element</title>
+</head>
+<body>
+	<script>
+		function add(name,age){
+			var header = document.createElement('h3');
+			var textNode = document.createTextNode('내 이름은 '+name+'이고, 나이는 '+age+ '  입니다.');
+			header.appendChild(textNode);
+			document.body.appendChild(header);
+		};
+
+		function imgAdd(imgName){
+			var img = document.createElement('img');
+			// img.src = '../testimg.jpg';
+			img.src='../images/'+imgName;
+			img.width = "300";
+			img.height = "276";
+			document.body.appendChild(img);
+		};
+		function del(){
+			var bodyEl=document.getElementsByTagName('body')[0];
+			bodyEl.removeChild(bodyEl.lastChild);
+			//document.getElementsByTagName('body')[0].removeChild(
+				//document.getElementsByTagName('body')[0].lastChild
+				//);
+		};
+
+		function imgUp(){
+			var imgTag = document.getElementsByTagName('img');
+
+			var imgTagLength = imgTag.length;
+
+			for(var i=0;i<imgTagLength;i++){
+				imgTag[i].width += 100;
+				imgTag[i].height += 100;
+			}			
+
+			//imgTag[0].width=document.getElementsByTagName('img')[0].width+500;
+			//imgTag[1].width+=500;
+			// document.getElementsByTagName('img').item(0).width=500;
+
+		};
+
+		function imgDown(){
+			var imgTag = document.getElementsByTagName('img');
+
+			var imgTagLength = imgTag.length;
+
+			for(var i=0;i<imgTagLength;i++){
+				imgTag[i].width-=50;
+				imgTag[i].height-=50;
+			}
+		}
+
+	</script>
+
+	<a href="#" onclick="add('강예솔',26)">당신은 누구십니까?</a><br>
+	<a href="#" onclick="add('강동호',24)">당신은 누구십니까?</a><br>
+	<a href="#" onclick="imgAdd('testimg.jpg')">에펠탑 이미지 가져오기</a><br>
+	<a href="#" onclick="imgAdd('car.gif')">자동차 이미지 가져오기</a><br>
+	<a href="#" onclick="imgUp()">+</a><br>
+	<a href="#" onclick="imgDown()">-</a><br>
+	<a href="#" onclick="del()">삭제</a><br>
+</body>
+</html>

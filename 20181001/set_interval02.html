@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		#panel{width:600px;height:300px;border:1px solid #000;position:relative}
+		#bar{position:absolute;left:50px;top:190px;width:500px;height:20px;background:#f30;}
+		#img{position:absolute;left:50px;top:120px;}
+		.view{transform:rotateY(180deg);}
+	</style>
+	<script>
+		var nStartX;
+		var nEndX;
+		var nCurrentX;
+		var nTimerId;
+		var nStep;
+		var objIMG;
+		window.onload = function(){
+			init();
+			initEventListener();
+		};
+		function init(){
+			var objBar = document.getElementById("bar");
+			//시작위치
+			nStartX = objBar.offsetLeft;
+			//마지막위치
+			nEndX = objBar.clientWidth + nStartX - 120;
+			console.log(nStartX +":"+ objBar.clientWidth);
+
+			//현재위치
+			nCurrentX = nStartX;
+			nStep = 2;
+			nTimerId = 0;
+
+			objIMG = document.getElementById("img");
+		};
+		function initEventListener(){
+			document.getElementById("btn_start").addEventListener("click",function(){
+				start();
+			});
+			document.getElementById("btn_stop").addEventListener("click",function(){
+				stopMove();
+			});
+		};
+		function start(){
+			if(nTimerId == 0){
+			nTimerId = setInterval(startMove,30);
+		}
+			console.log(nTimerId);
+		}
+		function startMove(){
+			nCurrentX += nStep;
+
+			if(nCurrentX > nEndX){
+				nCurrentX = nEndX;
+				nStep = -2;
+				objIMG.className="view";
+			}
+			if(nCurrentX < nStartX){
+				nCurrentX = nStartX;
+				nStep = 2;
+				objIMG.className="";
+			}
+
+			objIMG.style.left = nCurrentX + "px";
+		}
+		function stopMove(){
+			if(nTimerId != 0){
+				clearInterval(nTimerId);
+				nTimerId = 0;
+			}
+			console.log(nTimerId);
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<div id="panel">
+			<div id="bar"></div>
+			<div id="img"><img src="../images/car.png" alt="자동차"></div>
+		</div>
+		<div id="nav">
+			<button id="btn_start">시작</button>
+			<button id="btn_stop">멈춤</button>
+		</div>
+	</div>
+</body>
+</html>

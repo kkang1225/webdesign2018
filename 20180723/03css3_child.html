@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		ul{overflow:hidden;}
+		li{list-style:none;
+			float:left;
+			padding:15px;}
+		li:first-child{border-radius:10px 0 0 10px;}
+		li:last-child{border-radius:0 10px 10px 0}
+		li:nth-child(2n){background-color:deeppink;}
+		li:nth-child(2n+1){background-color:black;}
+		li{color:white;}
+		li:hover{background-color:#dddddd;cursor:pointer;}
+
+</style>
+</head>
+<body>
+	<ul>
+		<li>menu01</li>
+		<li>menu02</li>
+		<li>menu03</li>
+		<li>menu04</li>
+		<li>menu05</li>
+		<li>menu06</li>
+		<li>menu07</li>
+	</ul>
+	<!-- *외우고 가야 할 것!* -->
+	<style>
+	p::first-letter{font-size:3em;}
+	p::first-line{color:blue}
+	p::selection{background-color:pink;color:white;}
+	</style>
+	<h1>Lorem ipsum dolor sit amet.</h1>
+	<p>Lorem ipsum dolor sit amet.</p>
+	<p>Lorem ipsum dolor sit amet.</p>
+	<!-- 잘 안씀 -->
+	<style>
+		a{text-decoration:none;}
+		a:visited{color:#000000;}
+		a:hover{background-color:skyblue;color:#ffffff;}
+	</style>
+	<h1><a href="http://www.naver.com">링크</a></h1>	
+	<h1><a href="http://www.daum.net">다음</a></h1>
+	<h1><a href="http://www.w3school.com">w3</a></h1>
+	<h1>test</h1>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>for</title>
+	<style>
+		div{float:left;width:150px;}
+	</style>
+</head>
+<body>
+	<script>
+		// for(초기값;조건식;증감식){실행문장;}
+
+		var i,y;
+		for(i=2;i<=9;i++){document.write("<div>" + i + "단<br>");
+							for(y=1;y<=9;y++){
+								document.write(i + " x " + y + "=" +i*y+"<br>");}
+							document.write("</div>");}
+							
+							//document.write("2 x " + i + " = " + ( i*2) + "<br>");
+							console.log(i);
+	</script>
+</body>
+</html>

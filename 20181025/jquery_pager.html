@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>jquery slide</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		.wrap{width:1000px;margin:30px auto;}
+		.section{width:100%;}
+		.banner{width:100%;height:400px;overflow:hidden;position:relative;}
+		.banner>ul{width:5000px;position:absolute;}
+		.banner>ul:after{content:"";display:block;clear:both;}
+		.banner>ul>li{float:left;}
+		.btn{width:100%;position:absolute;bottom:10px;background:#fff;text-align:center;cursor:pointer;}
+		.pager{width:100%;position:absolute;bottom:40px;color:#fff;text-align:center;cursor:pointer;}
+	</style>
+	<script>
+		$(function(){
+			var current = 0;
+			$(".bts").click(function(){
+				current = $(this).index();
+				Movelist();
+			});
+
+			$("#bt_prev").click(function(){
+				if(current>=0){current--;}
+				if(current==-1){current=4;}
+					Movelist();
+			});
+			$("#bt_next").click(function(){
+				if(current<=4){current++;}
+				if(current==5){current=0}
+					Movelist();
+			});
+
+			function Movelist(){
+				$(".banner>ul").stop().animate({left:1000*current*-1},
+					function(){
+					$(".bts").css("color","#fff");
+					$(".bts").eq(current).css("color","#f00");	
+					});
+			};
+
+			var clickInterval;
+			timer();
+
+			function timer(){
+				clickInterval = setInterval(function(){
+					$("#bt_next").trigger("click");
+				},3000);
+			};
+
+			
+
+			$(".banner").on({mouseover:function(){
+				clearInterval(clickInterval);
+			},mouseout:function(){
+				timer();
+			}});
+		});
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="section">
+			<div class="banner">
+				<ul>
+					<li><img src="../images/images01.jpg" alt="img1"></li>
+					<li><img src="../images/images02.jpg" alt="img2"></li>
+					<li><img src="../images/images03.jpg" alt="img3"></li>
+					<li><img src="../images/images04.jpg" alt="img4"></li>
+					<li><img src="../images/images05.jpg" alt="img5"></li>
+				</ul>
+				<div class="btn">
+					<span id="bt_prev">이전</span>
+					<span id="bt_next">다음</span>
+				</div>
+				<div class="pager">
+					<span class="bts" style="color:red;">●</span>
+					<span class="bts">●</span>
+					<span class="bts">●</span>
+					<span class="bts">●</span>
+					<span class="bts">●</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

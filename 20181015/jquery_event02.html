@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		#nav{width:800px;margin:100px auto;}
+		#nav>ul{}
+		#nav>ul:after{content:"";display:block;clear:both;}
+		#nav>ul>li{float:left;background:#ccc;}
+		#nav>ul>li>a{display:block;width:200px;text-align:center;line-height:40px;}
+		#nav>ul>li.on{background:#33ccff;}
+
+		#content{padding:40px;margin-top:20px;border:4px solid #ccc;}
+	</style>
+	<script>
+		$(function(){
+			setMenu(1);
+		});
+
+		var setMenu = function(intIndex){
+			$("div#content").hide().eq(intIndex).show();
+			$("#nav li").eq(intIndex).addClass("on");
+			$("#nav li").on({
+				mouseover:function(){
+					$("#nav li").removeClass();
+					$(this).addClass("on");
+				},
+				mouseout:function(){
+					$("div#content").hide().eq(intIndex).show();
+					$("#nav li").removeClass();
+					$("#nav li").eq(intIndex).addClass("on");
+				},
+				click:function(e){
+					$("div#content").hide();
+					$("div#content").eq($(this).index()).show();
+					e.preventDefault();
+				}
+			});
+		};
+	</script>
+</head>
+<body>
+	<div id="nav">
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+		</ul>
+		<div id="content">1.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore dolorem cum praesentium, neque culpa dolor odit, odio, ipsum placeat debitis omnis unde voluptatum dolore rerum ab autem, commodi. Quis, incidunt?</div>
+		<div id="content">2.Non temporibus dolorem atque earum nulla at, ad mollitia fugiat praesentium molestias voluptatum nemo voluptatem neque aliquid itaque quae eveniet soluta recusandae. Minima fugiat ea, sint delectus, voluptatem maxime alias.</div>
+		<div id="content">3.Exercitationem dignissimos, ratione error ipsam numquam molestias expedita, magnam voluptatibus commodi libero distinctio deserunt labore, consequuntur maxime earum non eaque. Nulla facere iusto asperiores, earum atque dolores in, vitae illo.</div>
+		<div id="content">4.Esse voluptatibus atque dicta unde sed est quae earum facilis cum, at tempore quaerat ex consectetur, maxime totam, quidem perferendis recusandae sunt, ullam blanditiis iste consequuntur sequi! Ab, quibusdam assumenda.</div>
+	</div>
+</body>
+</html>

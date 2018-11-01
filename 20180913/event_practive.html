@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>event_practice</title>
+	<script>
+		var p;
+		function init(){
+			p=document.getElementById("p");
+			p.addEventListener("mouseover",over);
+			p.addEventListener("mouseout",out);
+		}
+		function over(){
+			p.style.backgroundColor="orchid";
+		}
+		function out(){
+			p.style.backgroundColor="white";
+		}
+
+	</script>
+</head>
+<body onload="init()">
+	<p id="p">마우스를 올리면 배경이 orchid색으로 바뀜</p>
+</body>
+</html>

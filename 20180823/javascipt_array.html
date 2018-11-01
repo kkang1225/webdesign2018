@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>javascript_array</title>
+	<style>
+		#box{width:100px;height:100px;background:none;}
+	</style>
+</head>
+<body>
+	<div id="box">색깔</div>
+	<button type="button" onclick="onSeoul(0)">서울</button>
+	<button type="button" onclick="onSeoul(1)">부산</button>
+	<button type="button" onclick="onSeoul(2)">인천</button>
+	
+	<script>
+		var color = ["#000","#f0f","#00f"];
+		var fontColor = ["#fff","#fff","#f00"];
+		var backImg = ["../images/w01.jpg","../images/w02.jpg","../images/w03.jpg"];
+		
+		function onSeoul(z){
+			var x = document.getElementById('box');
+		x.style.background = color[z];
+		x.style.color = fontColor[z];
+		document.getElementsByTagName('body')[0].style.background = "url(" +backImg[z]+ ")";
+		}
+		
+		// function printArr(){
+		// 	for(var i=0;i<city.length;i++){
+		// 		document.write("배열데이터[" + i + "] = "+city[i]+"<br>");
+		// 	}
+		// }
+
+		//printArr();
+	</script>
+</body>
+</html>

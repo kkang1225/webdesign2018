@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>on event</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		#nav{width:800px;margin:100px auto;}
+		#nav>ul{}
+		#nav>ul:after{content:"";display:block;clear:both;}
+		#nav>ul>li{float:left;background:#ccc;}
+		#nav>ul>li>a{display:block;width:200px;text-align:center;line-height:40px;}
+		#nav>ul>li.on{background:#33ccff;}
+	</style>
+	<script>
+		$(function(){
+			// $("#nav li").on("mouseover",function(){
+			// 	$("#nav li").removeClass();
+			// 	$(this).addClass("on");
+			// });
+			// $("#nav li").on("mouseout",function(){
+			// 	$("#nav li").removeClass();
+			// });
+
+			$("#nav li").on({
+				mouseover:function(){
+					$("#nav li").removeClass();
+					$(this).addClass("on");
+					// $("#nav li").eq($(this).index()).addClass("on");
+				},
+				mouseout:function(){
+					$("#nav li").removeClass();
+				},click:function(e){
+					e.preventDefault();
+				}
+			});
+
+			// $("선택자").on({
+			// 	mouseover:function(){},
+			// 	mouseout:function(){},
+			// 	click:function(){}
+			// });
+		});
+	</script>
+</head>
+<body>
+	<div id="nav">
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+		</ul>
+	</div>
+</body>
+</html>

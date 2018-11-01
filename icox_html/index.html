@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>icox</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script src="./js/modernizr.custom.js"></script>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="./js/main.js"></script>
+</head>
+<body>
+	<header id="firstheader">
+		<h1><a href="#"><img src="./images/logo.gif" alt="icox"></a></h1>
+		<form action="#" name="sform" method="get" id="sform">
+			<fieldset>
+				<legend class="skip">도서검색</legend>
+				<label for="sbox" class="skip">도서검색입력</label>
+				<input type="search" id="sbox" class="tbox" placeholder="도서검색어입력">
+				<input type="image" class="sbtn" src="./images/search.gif" alt="검색">
+			</fieldset>
+		</form>
+		<ul class="util">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<nav id="gnb">
+			<ul class="gnblist">
+				<li class="m m1">
+					<a href="#" class="mm">아이콕스</a>
+					<ul style="padding-left:40px;">
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">비젼</a></li>
+					</ul>
+				</li>
+				<li class="m m2">
+					<a href="#" class="mm">도서소개</a>
+					<ul style="padding-left:30px">
+						<li><a href="#">신간도서</a></li>
+						<li><a href="#">도서목록</a></li>
+					</ul>
+				</li>
+				<li class="m m3">
+					<a href="#" class="mm">iCox커뮤니티</a>
+					<ul>
+						<li><a href="#">와글와글IT</a></li>
+						<li><a href="#">C스쿨</a></li>
+						<li><a href="#">Java스쿨</a></li>
+					</ul>
+				</li>
+				<li class="m m4">
+					<a href="#" class="mm">iCox자료실</a>
+					<ul>
+						<li><a href="#">도서자료실</a></li>
+						<li><a href="#">기타자료실</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="allmenu_view"><a href="#">전체메뉴</a></div>
+		</nav>
+		<nav id="allMenu_box">
+			<ul>
+				<li>
+					<a href="#">아이콕스</a>
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">비젼</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">도서소개</a>
+					<ul>
+						<li><a href="#">신간도서</a></li>
+						<li><a href="#">도서목록</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">iCOX커뮤니티</a>
+					<ul>
+						<li><a href="#">와글와글IT</a></li>
+						<li><a href="#">C스쿨</a></li>
+						<li><a href="#">Java스쿨</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">iCOX자료실</a>
+					<ul>
+						<li><a href="#">도서자료실</a></li>
+						<li><a href="#">기타자료실</a></li>
+					</ul>
+				</li>
+			</ul>
+			<a href="#" class="all_close">전체메뉴닫기</a>
+		</nav>
+	</header>
+	<section id="recomm_book">
+		<div id="book_frame">
+			<div id="book_content1" class="bookcon">
+				<h2><img src="./images/newbook1_tit.gif" alt="안드로이드로 용돈벌기"></h2>
+				<ul>
+					<li class="pic"><img src="./images/new_book1.jpg" alt="안드로이드로 용돈벌기"></li>
+					<li class="smr"><img src="./images/newbook1_exp.gif" alt="~~~제공합니다."></li>
+					<li class="detail"><img src="./images/detile_view.gif" alt="자세히 알아보기"></li>
+				</ul>
+			</div>
+			<div id="book_content2" class="bookcon">
+				<h2><img src="./images/newbook2_tit.gif" alt="아이폰으로 용돈벌기"></h2>
+				<ul>
+					<li class="pic"><img src="./images/new_book2.jpg" alt="아이폰으로 용돈벌기"></li>
+					<li class="smr"><img src="./images/newbook2_exp.gif" alt="~~~제공합니다."></li>
+					<li class="detail"><img src="./images/detile_view.gif" alt="자세히 알아보기"></li>
+				</ul>
+			</div>
+		</div>
+		<div id="arrow">
+			<a href="#" class="prev" onclick="return false"><img src="./images/btn_prev.gif" alt="이전"></a>
+			<a href="#" class="next" onclick="return false"><img src="./images/btn_next.gif" alt="다음"></a>
+		</div>
+		<ul id="book_roll">
+			<li><img src="./images/state_over.png" alt="1" class="firstactive"></li>
+			<li><img src="./images/state_out.png" alt="2" class="secondactive"></li>
+		</ul>
+	</section>
+	<div id="content">
+		<div id="login-banner">
+			<div id="login-area">
+				<h2><img src="./images/userlogin.gif" alt="userlogin"></h2>
+				<form action="#" method="post" class="iform">
+					<fieldset>
+						<legend class="skip">로그인</legend>
+						<p><label for="id" class="skip">아이디</label><input type="text" id="id" class="tbox" placeholder="아이디입력"></p>
+						<p><label for="pw" class="skip">비밀번호</label><input type="password" id="pw" class="tbox" placeholder="비밀번호입력"></p>
+						<p class="loginbtn"><a href="#">로그인</a></p>
+						<ul>
+							<li class="find"><a href="#">아이디/비밀번호 찾기</a></li>
+							<li class="join"><a href="#">회원가입</a></li>
+						</ul>
+					</fieldset>
+				</form>
+			</div>
+			<ul id="banner-area">
+				<li><a href="#"><img src="./images/banner1.gif" alt="banner1"></a></li>
+				<li><a href="#"><img src="./images/banner2.gif" alt="banner2"></a></li>
+				<li><a href="#"><img src="./images/banner3.gif" alt="banner3"></a></li>
+				<li><a href="#"><img src="./images/banner4.gif" alt="banner4"></a></li>
+			</ul>
+		</div>
+		<div id="newbooks-news">
+			<section>
+				<h2 class="tit t1"><a href="#" onclick="return false"><img src="./images/tit_newbook_over.gif" alt="새로나온책"></a></h2>
+				<div class="items item1">
+				<a href="#" class="rss">
+					<article class="newbook_list1 booklist">
+						<header>
+							<h2><img src="./images/newbook1.gif" alt="안드로이드로 용돈벌기"></h2>
+						</header>
+						<p class="subtit"><strong>php와 같은 스크립트 언어..</strong></p>
+						<p class="smr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, vero?</p>
+						<footer>
+							<p>
+								<span>작성자 : 한혜진님</span>
+								<span><img src="./images/star.gif" alt="별점"></span>
+								<strong>5점</strong>
+							</p>
+						</footer>
+					</article>
+				</a>
+				<a href="#" class="rss">
+					<article class="newbook_list2 booklist">
+						<header>
+							<h2><img src="./images/newbook2.gif" alt="안드로이드로 용돈벌기"></h2>
+						</header>
+						<p class="subtit"><strong>php와 같은 스크립트 언어..</strong></p>
+						<p class="smr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, vero?</p>
+						<footer>
+							<p>
+								<span>작성자 : 한혜진님</span>
+								<span><img src="./images/star.gif" alt="별점"></span>
+								<strong>5점</strong>
+							</p>
+						</footer>
+					</article>
+				</a>
+				</div>
+			</section>
+				<h2 class="tit t2"><a href="#" onclick="return false"><img src="./images/tit_news.gif" alt="새로나온소식"></a></h2>
+				<div class="items item2">
+					<div id="news_list">
+						<ul>
+							<li><a href="#">공지사항<span>2018-10-04</span></a></li>
+							<li><a href="#">공지사항<span>2018-10-04</span></a></li>
+							<li><a href="#">공지사항<span>2018-10-04</span></a></li>
+							<li><a href="#">공지사항<span>2018-10-04</span></a></li>
+							<li><a href="#">공지사항<span>2018-10-04</span></a></li>
+							<li><a href="#">공지사항<span>2018-10-04</span></a></li>
+							<li><a href="#">공지사항<span>2018-10-04</span></a></li>
+							<li><a href="#">공지사항<span>2018-10-04</span></a></li>
+						</ul>
+					</div>
+				</div>
+			
+		</div>
+		<div id="down-author">
+			<p class="down"><a href="#"><img src="./images/down.gif" alt="도서 자료 및 부록 다운로드"></a></p>
+			<article id="author_column">
+				<h2><img src="./images/autor_column.gif" alt="이달의 저자 컬럼"></h2>
+				<ul>
+					<li>
+						<iframe width="248" height="152" src="http:www.youtube.com/embed/_QLUqRV1ILU" title="이달의 저자 컬럼"></iframe>
+						<li class="nscreen"><a href="#"><span>N-Screen 시대란?</span>최근 다양한 디바이스가 보급되면서  기기마다 서로 다른 해상도를 고려하지 않을 수 없게 되었습니다. 우리 주변만 보더라도  모바일 폰에서부터 태블릿, 데스크톱PC, 스마트TV등...</a></li>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+	<footer id="realfooter">
+		<div class="foot">
+			<div>
+			<p>(주)ICOX 158-718 서울시 양천구 목1동 923-4 현대드림타워</p>
+			<p>대표이사:이기택 사업자 등록번호:000-000</p>
+			<small class="copy">Copyright &copy; 2011 Icox Education</small>
+		</div>
+		<ul>
+			<li><a href="#"><img src="images/facebook.gif" alt="페이스북" /></a></li>
+			<li><a href="#"><img src="images/twitter.gif" alt="트위터" /></a></li>
+		</ul>
+		</div>
+	</footer>
+</body>
+</html>

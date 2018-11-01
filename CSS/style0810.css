@@ -1,0 +1,6 @@
+@charset "utf-8";
+.container{height:100vh;background-attachment:fixed;background-size:cover;}
+.container header{display:inline-block;position:relative;left:50%;top:50%;width: 400px;height:80px;margin-left:-200px;margin-top:-50px;text-align: center;color:#fff;}
+.container.one{background-image:url(../images/w01.jpg);}
+.container.two{background-image:url(../images/w02.jpg);}
+.container.three{background-image:url(../images/w03.jpg);}

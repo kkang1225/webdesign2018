@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>jquery position</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		#panel{width:600px;height:300px;border:1px solid #999;position:relative;left:50px;}
+		.bar{position:absolute;left:50px;top:190px;width:500px;height:20px;background:#f00;}
+		#car{position:absolute;left:50px;top:120px;width:120px;height:70px;}
+	</style>
+	<script>
+		$(function(){
+			var $car = $("#car");
+			// var currentX = $car.position().left;
+			// var currentY = $car.position().top;
+			// console.log("x : "+currentX+", y :"+ currentY);
+
+			$("#move").click(function(){
+				var currentX = $car.position().left	+ 10;
+				$car.css("left",currentX);			
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="panel">
+		<div class="bar"></div>
+		<img src="../images/car.gif" alt="자동차" id="car">
+	</div>
+	<button id="move">이동</button>
+</body>
+</html>

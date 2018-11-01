@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>jquery event</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		// $(document).ready(function(){
+		// 	$("#btn").on("click",function(){
+		// 		alert("안녕하세요?");
+		// 	});
+		// 	$("#btnOff").click(function(){
+		// 		$("#btn").off("click");
+		// 	});
+		// });
+
+		$(function(){
+			// $("ul.menu li").on("click",function(){
+			// 	alert($(this).html());
+			// });
+
+			// $("#btn").one("click",function(){
+			// 	alert("환영합니다.");
+			// });
+
+			// $("#test").one("click",function(e){
+			// 	alert("환영합니다.");
+			// 	event.preventDefault();
+			// });
+
+			// $("#panel").click(function(){
+			// 	console.log("01.panel에 등록한 이벤트");
+			// });
+			// $("#btn1").click(function(){
+			// 	console.log("02.button1 실행");
+			// });
+			// $("#btn2").click(function(){
+			// 	console.log("03.button2 실행");
+			// 	event.stopPropagation();
+			// });
+
+			$("#btn1").on("click",function(){
+				console.log("버튼1이 눌렸습니다.");
+				$("#btn2").trigger("click");
+			});
+			$("#btn2").on("click",function(){
+				console.log("버튼2가 눌렸습니다.");
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- <button id="btn">확인</button> -->
+	<!-- <button id="btnOff">이벤트 제거</button>
+
+	<ul class="menu">
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+		<li>menu5</li>
+		<li>menu6</li>
+	</ul>
+</body> -->
+
+	<!-- <a href="http://www.naver.com" id="test">네이버로 이동</a> -->
+
+	<!-- <div id="panel">
+		<button id="btn1">button1</button>
+		<button id="btn2">button2</button>
+	</div> -->
+
+	<button id="btn1">button1</button>
+	<button id="btn2">button2</button>
+</html>

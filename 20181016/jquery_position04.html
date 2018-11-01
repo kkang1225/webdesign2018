@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		#parent{border: 1px solid #000;height:400PX;width:500px;margin:50px 0 0 100px;position:absolute;left:100px;top:100px;}
+		#car{position:absolute;left:50px;top:100px;width:120px;height:70px;}
+	</style>
+	<script>
+		$(function(){
+			var $car = $("#car");
+			$("#parent").click(function(e){
+				var left = e.clientX - 60;
+				var top = e.clientY - 35;
+
+				console.log("마우스X축: "+left+", 마우스Y축: "+top);
+
+				$car.offset({left:left,top:top});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="parent">
+		<img src="../images/car.gif" alt="car" id="car">
+	</div>
+</body>
+</html>

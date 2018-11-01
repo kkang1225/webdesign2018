@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+</head>
+<body>
+	<script>
+		var com = [95,88,,72,68,,99,82,78,85];
+		var getAvg;
+		function printAvg(){
+			var i,sum = 0;
+			var count = 0;
+			var n = com.length;
+
+			document.write(n + "명의 평균점수<br>");
+			for(i=0;i<n;i++){
+				if(com[i] === undefined){
+					continue;
+				}else{
+				sum += com[i]; //sum = sum + com[i]
+				count ++; 
+				}
+				
+			}
+			document.write("점수를 입력한 학생 : "+count+" 명 <br>");
+			document.write("총합 : "+sum+"<br>");
+			return (sum/n);
+		}
+		getAvg = printAvg();
+
+		document.write("평균 : <b>" + getAvg + "</b> 점");
+	</script>
+</body>
+</html>

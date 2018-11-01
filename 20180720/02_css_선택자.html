@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>CSS</title>
+	<style>
+		*{color:gray;}
+		h1{color:blue;}
+		/*p{color:red;font-size:20px;}*/
+		div{width: 300px;
+			background-color:gray;
+			margin:20px;
+			padding:10px;
+			color:#ffffff;
+			border:2px solid #00ff00;}
+			#header{background-color:red;}
+			#content{background-color:blue;}
+			.select{background-color:skyblue;}
+			li{background-color:green;}
+	</style>
+</head>
+<body>
+	<h1>Lorem ipsum dolor.</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, doloremque.</p>
+
+	<!-- div#header>lorem10^div#content>lorem10^div#footer>lorem10 -->
+	<div id="header" style="color:blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, non.</div>
+	<div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, totam!</div>
+	<div id="footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, repellendus.</div>
+
+	<div class="select">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, expedita.</div>
+
+	<div class="select"></div>
+
+	<ul>
+		<li>Lorem ipsum dolor.</li>
+		<li class="select">Natus nostrum, commodi!</li>
+		<li>Vitae, harum, dicta.</li>
+		<li class="select">Eum, maiores. Eos!</li>
+		<li>Debitis odio, veniam.</li>
+	</ul>
+	
+	<!-- (div#header>lorem10)+(div#content>lorem10)+(div#footer>lorem10) -->
+
+	<!--<div id="header"></div>
+	<div id="content"></div>
+	<div id="footer"></div>-->
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>css</title>
+	<style>
+		img{width:100px;border:1px solid #000000;}
+		img[src$=png]{border:2px solid #ff0000;}
+		img[src$=jpg]{border:2px solid #00ff00;}
+		img[src$=gif]{border:2px solid #0000ff}
+		/*div>ul>li{background-color:violet;}*/
+		div li{background-color:violet;}
+		/*nav>ul>li{background-color:orange;}*/
+		nav li{background-color:orange;}
+		/*.select{background-color:yellow;}*/
+		/*div>ul>li.select{background-color:skyblue;}]*/
+		div .select{background-color:skyblue;}
+		/*nav>ul>li.select{background-color:pink;}*/
+		nav .select{background-color:lime;}
+
+	</style>
+</head>
+<body>
+	<img src="./images/jajq.png" alt="png">
+	<img src="./images/node.jpg" alt="jpg">
+	<img src="./images/ux.gif" alt="gif">
+
+	div>h1>{css selector}^h2>lorem5^ul>li*3>lorem2
+	<div>
+		<h1>css selector</h1>
+		<h2>Lorem ipsum dolor sit amet.</h2>
+		<ul>
+			<li>Lorem ipsum.</li>
+			<li class="select">Neque, debitis!</li>
+			<li>Vel, quis.</li>
+		</ul>
+	</div>
+	<nav>
+		<ul>
+			<li>Lorem ipsum.</li>
+			<li>Tempore, placeat.</li>
+			<li class="select">Amet, tempora!</li>
+		</ul>
+	</nav>
+</body>
+</html>

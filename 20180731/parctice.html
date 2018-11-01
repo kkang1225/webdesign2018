@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:black;}
+
+		#container{width:1000px;background:gray;margin:0 auto;position:relative;}
+		ul{margin-top:10px;}
+		ul:after{content:"";display:block;clear:both;}
+		li{width:200px;background:#cdcdcd;float:left;border-right:1px solid #000;box-sizing:border-box;}
+		li:last-child{border:none;}
+		li a{display:block;padding:15px;height:20px;text-align:center;line-height:20px;}
+		li a:hover{background:#fff;font-weight:bold;}
+		#container .view{width:1000px;height:200px;padding:50px;box-sizing:border-box;}
+		
+		ul div{width:1000px;height:200px;padding:50px;box-sizing:border-box;display:none;background:skyblue;position:absolute;left:0;}
+		
+		li:nth-child(1):hover .view1{display:block;}
+		li:nth-child(2):hover .view2{display:block;}
+		li:nth-child(3):hover .view3{display:block;}
+		li:nth-child(4):hover .view4{display:block;}
+		li:nth-child(5):hover .view5{display:block;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<ul>
+			<li>
+				<a href="#">menu1</a>
+				<div class="view1">1.Lorem ipsum dolor sit amet.</div>
+			</li>
+			<li>
+				<a href="#">menu2</a>
+				<div class="view2">2.Sequi, molestiae aperiam nihil ipsam!</div>
+			</li>
+			<li>
+				<a href="#">menu3</a>
+				<div class="view3">3.Sint quaerat in dolore possimus.</div>
+			</li>
+			<li>
+				<a href="#">menu4</a>
+				<div class="view4">4.Voluptas velit impedit enim quasi!</div>
+			</li>
+			<li>
+				<a href="#">menu5</a>
+				<div class="view5">5.Sit vel, impedit! Quasi, veniam.</div>
+			</li>
+		</ul>
+		<div class="view">안녕하세요</div>
+	</div>
+</body>
+</html>

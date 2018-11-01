@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>jquery position</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		#info{border:1px solid #000;width:500px;height:30px;margin:50px 0 0 10px;}
+		#parent{border:1px solid #000;position:absolute;width:500px;height:400px;left:10px;top:100px;}
+		.car{width:120px;height:70px;position:absolute;}
+		.car p{position:absolute;width:100%;text-align:center;margin-top:20px;}
+		#car1{left:50px;top:100px;}
+		#car2{left:150px;top:200px;}
+		#car3{left:180px;top:50px;}
+		#car4{left:350px;top:200px;}
+		#car5{left:50px;top:300px;}
+	</style>
+	<script>
+		$(function(){
+			var $info = $("#info");
+			$(".car").click(function(){
+				// var posX = $(this).position().left;
+				// var posY = $(this).position().top;
+				// var posId = $(this).attr("id");
+				// $info.html("x: "+posX+", y: "+posY+", id: "+posId);
+				var localpos = $(this).position();
+				var str = "지역좌표x : "+localpos.left+", y : "+localpos.top+ ", id : "+$(this).attr("id")+"<br>";
+				var globalpos = $(this).offset();
+				str += "전역좌표x : "+globalpos.left+", y : "+globalpos.top+", id : "+$(this).attr("id");
+				
+				$info.html(str);
+				console.log(str);
+			});
+			$("#btn").click(function(){
+				// $("#car1").css({left:50,top:50});
+				// $("#car2").css({left:50,top:120});
+				// $("#car3").css({left:50,top:190});
+				// $("#car4").css({left:50,top:260});
+				// $("#car5").css({left:50,top:330});
+				var startX = 50;
+				var startY = 50;
+				$(".car").each(function(index){
+					$(this).css({left:startX,top:startY});
+					startX += 50;
+					startY += 70;
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="info">
+		위치값 출력
+	</div>
+	<div id="parent">
+		<div id="car1" class="car">
+			<p>1</p>
+			<img src="../images/car.gif" alt="car1">
+		</div>
+		<div id="car2" class="car">
+			<p>2</p>
+			<img src="../images/car.gif" alt="car2">
+		</div>
+		<div id="car3" class="car">
+			<p>3</p>
+			<img src="../images/car.gif" alt="car3">
+		</div>
+		<div id="car4" class="car">
+			<p>4</p>
+			<img src="../images/car.gif" alt="car4">
+		</div>
+		<div id="car5" class="car">
+			<p>5</p>
+			<img src="../images/car.gif" alt="car5">
+		</div>
+	</div>
+	<button id="btn">정렬</button>
+</body>
+</html>

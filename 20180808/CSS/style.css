@@ -1,0 +1,9 @@
+@charset "utf-8";
+#wrap{width:1000px;margin:0 auto;}
+#main_header{height:100px;background: #cdcdcd;}
+#main_container{/*overflow:hidden;*/background:green;}
+/*#main_container:after{content:"";display:block;clear:both;}*/
+#main_aside{float:left;width:200px;height: 200px;background:pink;}
+#main_section{float:right;width:800px;height:800px;background:skyblue;}
+#main_footer{height: 200px;background: #000;/*clear:both;*/}
+.clearfix:after{content:"";display:block;clear:both;}

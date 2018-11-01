@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>tabmenu01</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		#container{width:500px;margin:50px auto;font-size:12px;}
+		ul.tab{}
+		ul.tab:after{content:"";display:block;clear:both;}
+		ul.tab>li{float:left;background:#e9eff8;border-radius:10px 10px 0 0 ;}
+		ul.tab>li>a{display:block;width:100px;line-height:40px;text-align:center;}
+		ul.tab>li.select{background:#c1d2f2;cursor:pointer;font-weight:bold;}
+		ul.tab>li>a.select{font-weight:bold;}
+		#container div{border:1px solid #9fb7d4;padding:10px;}
+	</style>
+	<script>
+		$(function(){
+			$("#container div").hide();
+			$("#container div").eq(0).show();
+			$("ul.tab li:eq(0)").addClass("select");
+
+			$("ul.tab li").click(function(){
+				$("ul.tab li, ul.tab a").removeClass();
+				$(this).addClass("select");
+				$("#container div").hide();
+				// $("#continaer div").css("display","none");
+				$("#container div").eq($(this).index()).show();
+
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<ul class="tab">
+			<li><a href="#" class="select">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+		<div>1.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ab beatae magnam saepe nihil nobis amet. Perferendis numquam consectetur velit assumenda magnam. Quas voluptatibus autem, mollitia unde, quo natus illo.</div>
+		<div>2.Consequuntur culpa maiores nesciunt temporibus mollitia fugit commodi illo saepe ex explicabo dolorum cupiditate, inventore iusto debitis magni quasi optio ipsam, in ullam recusandae tempora esse nemo, dicta! Fuga, quos!</div>
+		<div>3.Quasi minus sint officia porro perspiciatis eos nobis neque dicta, error! Consequatur doloribus nisi, itaque nemo laborum libero culpa velit molestiae dignissimos quibusdam nihil in labore nostrum eos dolorem delectus.</div>
+		<div>4.Praesentium ducimus officiis eius aspernatur nesciunt maxime totam fugiat enim aliquid magni, porro cum neque eaque, minus commodi, ipsam ullam eveniet et iure numquam. Perferendis, dolorum neque. Sit, ea, unde!</div>
+		<div>5.Enim perferendis, libero dolorem voluptas quo, officia delectus quasi tempora soluta voluptatibus dicta excepturi dignissimos dolores. Aut facere saepe possimus odio dolores numquam soluta, ea. Libero magni rerum, iste commodi.</div>
+	</div>
+</body>
+</html>

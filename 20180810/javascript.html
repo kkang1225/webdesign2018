@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>대입연산자</title>
+	<style>
+		div{width:300px;height:500px;background:#cdcdcd;}
+		div#box1{display:none;}
+	</style>
+</head>
+<body>
+	<div id="box">여기는 술집입니다.</div>
+	<div id="box1">자꾸 누르지 마세요.</div>
+	<button type="button" onclick="document.getElementById('box').style.display='none'">레이어 삭제</button>
+	<button type="button" onclikkck="document.getElementById('box1').style.display='block'">누르지 마세요</button>
+	<script>
+		var x1 = x2 = x3 = x4 = x5 = 10;
+		var st = "<br>Hello";
+		x1 *= 3;  
+		//document.write(x1);
+		st += "<div> JavaScript";
+		st += "!!! kang dong ho";
+		st += "<br>안녕하세요</div>";
+		//document.write(st);
+		//console.log(st);
+
+		var age=17;
+		var result;
+		//if(조건식){참이면 실행;}
+		if(age>=19){result = "당신은 성인 입니다.";}else{result="당장 나가주세요";}
+		//document.write(result);
+		document.getElementById('box').innerHTML=result;
+	</script>
+</body>
+</html>

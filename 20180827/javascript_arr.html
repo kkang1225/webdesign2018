@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+</head>
+<body>
+	<script>
+		var arrdata = [];
+		function insertArr(){
+			//var i;
+			for(var i=0;i<=99;i++){
+				arrdata[i] = i+1;
+				document.write(arrdata[i] + " ");
+			}
+		}
+		function delArr(){
+			//for(var i=0;i<arrdata.length;i++){
+				//if(i%2 == 0){
+					//arrdata[i] = 0;
+					arrdata.length = 0;
+				//}
+			//}
+			selectArr();
+		}
+		function selectArr(){
+			for(var i=0;i<arrdata.length;i++){
+				document.write(arrdata[i] + " ");
+			}
+
+			if(arrdata.length==0){
+				document.write("자료없음")
+			}
+		}
+
+
+
+		insertArr();
+	</script>
+	<button type="button" onclick="delArr()">홀수 데이터 초기화</button>
+</body>
+</html>

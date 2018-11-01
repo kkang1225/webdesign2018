@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>type_animate</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		#contents{text-align:center;width:100%;font-style:italic;color:#fff;}
+		#contents>div#section1{height:100vh;line-height:100vh;background:#000;font-size:40px;}
+		.sec1 h2 span{display:inline-block;opacity:0;animation-name:ani1;animation-duration:0.5s;animation-fill-mode:forwards;}
+		.sec1 h2 span:nth-child(2){animation-delay:0.2s;}
+		.sec1 h2 span:nth-child(3){animation-delay:0.4s;}
+		.sec1 h2 span:nth-child(4){animation-delay:0.6s;}
+		.sec1 h2 span:nth-child(5){animation-delay:0.8s;}
+		.sec1 h2 span:nth-child(6){animation-delay:1.0s;}
+		.sec1 h2 span:nth-child(7){animation-delay:1.2s;}
+		.sec1 h2 span:nth-child(8){animation-delay:1.4s;}
+		.sec1 h2 span:nth-child(9){animation-delay:1.6s;}
+		.sec1 h2 span:nth-child(10){animation-delay:1.8s;}
+		.sec1 h2 span:nth-child(11){animation-delay:2.0s;}
+		.sec1 h2 span:nth-child(12){animation-delay:2.2s;}
+		.sec1 h2 span:nth-child(13){animation-delay:2.4s;}
+		.sec1 h2 span:nth-child(14){animation-delay:2.6s;}
+		.sec1 h2 span:nth-child(15){animation-delay:2.8s;}
+		@keyframes ani1{
+			0%{transform:translateX(100px) scale(0.5);}
+			100%{opacity:1;transform:translateY(0px) scale(1);}
+		}
+	</style>
+</head>
+<body>
+	<section id="contents">
+		<div id="section1">
+			<div class="container">
+				<div class="sec1">
+					<h2>
+						<span>t</span><span>h</span><span>i</span><span>s</span> <span>i</span><span>s</span> <span>n</span><span>e</span><span>v</span><span>e</span><span>r</span> <span>t</span><span>h</span><span>a</span><span>t</span>
+					</h2>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

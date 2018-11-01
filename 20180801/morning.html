@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:black;}
+
+		#container{width:1000px;background:gray;margin:0 auto;position:relative;}
+		ul{}
+		ul:after{content:"";display:block;clear:both;}
+		ul>li{float:left;width:20%;background:#cdcdcd;}
+		ul>li>a{display:block;height:30px;padding:15px;text-align:center;line-height:30px;}
+		ul>li>a:hover{background:#fff;font-weight:bold;}
+		ul div{display:none;background:pink;width:1000px;height:260px;padding:30px;box-sizing:border-box;position:absolute;left:0;}
+
+		.view{height:200px;padding:30px;}
+		li:nth-child(1):hover div{display:block;}
+		li:nth-child(2):hover div{display:block;}
+		li:nth-child(3):hover div{display:block;}
+		li:nth-child(4):hover div{display:block;}
+		li:nth-child(5):hover div{display:block;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<ul>
+			<li>
+				<a href="">menu</a>
+				<div class="view1">Lorem ipsum dolor sit amet.</div>
+			</li>
+			<li>
+				<a href="">menu</a>
+				<div class="view2">Iusto voluptate, mollitia ad et.</div>
+			</li>
+			<li>
+				<a href="">menu</a>
+				<div class="view3">Aliquid blanditiis sed neque sunt.</div>
+			</li>
+			<li>
+				<a href="">menu</a>
+				<div class="view4">Nulla sed maxime omnis quod.</div>
+			</li>
+			<li>
+				<a href="">menu</a>
+				<div class="view5">Praesentium culpa dolor, impedit eveniet!</div>
+			</li>
+		</ul>
+		<div class="view">안녕하세요</div>
+	</div>
+</body>
+</html>

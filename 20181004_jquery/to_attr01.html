@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+        body{
+            font-size:9pt;
+            font-family:"굴림";       
+        }
+        div, p, ul, li{
+            border:1px #eeeeee solid;
+            margin:10px;
+        }
+        ul {
+         padding:10px;
+        }
+        li.select {
+            background-color:#ccc;
+        }
+    </style>
+    <script>
+    	// $(document).ready(function(){
+    	// 	$("[class*=test]").css("border","4px solid #f00");
+    	// });
+
+    	//개수 구하기
+    	// $(document).ready(function(){
+    	// 	alert("length="+$("div").length);
+    	// });
+
+    	//n 번째 
+    	// $(document).ready(function(){
+    	// 	var $liList = $("ul.menu li");
+    	// 	var $li_1 = $liList.eq(1);
+    	// 	$li_1.css("border","4px solid #f00");
+
+    		// =$("ul.menu li").eq(1).css("border","4px solid #f00");
+    	// });
+
+    	// $(document).ready(function(){
+    	// 	var $liList = $("ul.menu li");
+    	// 	var li_1 = $liList.get(1);
+    	// 	var li_1 = $liList[0];  //javascript 방식으로 style적용 해야함.
+    	// 	li_1.style.border = "4px solid #f00";
+
+    	// });
+
+    	//$(document).ready(function(){
+    		//var $liList = $("ul.menu li");
+    		//$liList.each(function(index){
+    		//console.log(this);
+    		//var borderpx = (index + 1)*2; //2 4 6 8px로 border 크기 바꾸기.
+    		//$(this).css("border",borderpx + "px solid #f00");
+    		//$liList.eq(index).css("border",borderpx + "px solid #f00")});  
+    		//each와 this는 붙어다님.
+
+    		// = for(var i=0;i<$liList.length;i++){
+    		// 	$liList.eq(i).css("border","2px solid #f00");
+    		// } each가 나오면 for문을 떠올리기
+    	//});
+
+    	// $(document).ready(function(){
+    	// 	var $liList = $("ul.menu li");
+    	// 	$liList.filter(".select").css("border","4px solid #f00");
+
+    	// 	//filter와 find의 차이점 구분하기.
+
+    	// 	var $liList = $("ul.menu");
+    	// 	$liList.find(".select").css("border","4px solid #f00");
+    	// });
+
+    	
+    	//index값 구하기.
+    	$(document).ready(function(){
+    		$("ul.menu li").click(function(){
+    			console.log($(this).index());
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<div id="samplePage" class="page" >
+        샘플 페이지(div, id=samplePage, class=page)
+        <div id="header">               
+            헤더 영역(div, id=header)
+        </div>
+        <div id="content" class="sample-content">
+            노드 찾기(div, id=content, class=sample-content)
+            <ul class="menu">
+                일반 노드 찾기(ul, class=menu)
+                <li data-value="1">id로 찾기(li, data-value=1)</li>
+                <li class="select">tag로 찾기(li, class=select)</li>
+                <li data-value="2">class로 찾기(li, data-value=2)</li>
+                <li class="test1">속성으로 찾기(li, class=test1)</li>
+            </ul>
+            <div class="content-data">
+                자식 노드 찾기(div, class=content-data)
+                <p class="test1">1. 모든 자식 노드 찾기(p, class=test1)</p>
+                <p>2. 특정 자식 노드만 찾기(p)</p>
+                <p class="test2">3. 마지막 자식 노드 찾기(p, class=test2)</p>
+            </div>
+        </div>
+        <div id="footer">               
+            푸터 영역(div, id=footer)
+        </div>      
+    </div>
+</body>
+</html>

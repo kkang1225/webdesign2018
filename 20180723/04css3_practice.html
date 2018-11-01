@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		ul{overflow:hidden;}
+		li{float:left;
+			padding:30px;
+			list-style:none;
+			border:5px solid #000000;
+			border-color:lime;
+			border-right:none;}
+		
+		
+		li:first-child{border-radius:20px 0 0 20px;}
+		li:last-child{border-right:5px solid #000000; border-right-color:lime; 
+			border-radius:0px 20px 20px 0;}
+		li:nth-child(2n){background-color:deeppink;}
+		li:nth-child(2n+1){background-color:black;color:white;}
+		li:hover{background-color:#dddddd;
+				cursor:pointer;color:coral;font-size:2em;}
+		li:nth-child(5):hover{font-size:3em;}
+
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li>menu1</li>
+		<li>menu2</li>
+		<li>menu3</li>
+		<li>menu4</li>
+		<li>menu5</li>
+		<li>menu6</li>
+		<li>menu7</li>
+	</ul>
+<style>
+	a{text-decoration:none;}
+	a:visited{color:green;}
+</style>
+	<h1>링크선택자</h1>
+	<h2><a href="http://www.naver.com" target="_blank">네이버</a></h2>
+</body>
+</html>

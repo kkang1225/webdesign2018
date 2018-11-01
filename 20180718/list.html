@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		ul>li{list-style:none;float:left;margin-left:20px;}
+	</style>
+</head>
+<body>
+	<!-- h1>{비순차적 목록}^h2>{주메뉴}^ul>li*6>a[href="#"]>{menu$}
+	(h1>{비순찬적 목록})+(h2>{주메뉴})+(ul>li*6>a[href="#"]>{menu$}) -->
+	<h1>비순차적 목록</h1>
+	<h2>주메뉴</h2>
+	<ul>
+		<li><a href="#">기업소개</a></li>
+		<li><a href="#">사업영역</a></li>
+		<li><a href="#">제품소개</a></li>
+		<li><a href="#">고객센터</a></li>
+		<li><a href="#">홍보자료실</a></li>
+		<li><a href="#">인재채용</a></li>
+	</ul>
+	<br>
+	<hr>
+	<br>
+	<h1>표만들기</h1>
+	<h2>셀합치기</h2>
+	<table border="1">
+		<caption>공연요금</caption>
+		<tr>
+			<th colspan="3">공연요금</th>
+			<!-- <td>공연요금</td>
+			<td>공연요금</td> -->
+		</tr>
+		<tr>
+			<th>구분</th>
+			<th>S석</th>
+			<th>VIP</th>
+		</tr>
+		<tr>
+			<th>성인</th>
+			<td>30,000원</td>
+			<td>50,000원</td>
+		</tr>
+		<tr>
+			<th>청소년</th>
+			<td>40,000원</td>
+			<td>60,000원</td>
+		</tr>
+		<tr>
+			<th>소인</th>
+			<td colspan="2">미취학 아동 일반 요금의 50%</td>
+			<!-- <td>공연요금</td> -->
+		</tr>
+		<tr>
+			<th rowspan="2">공연시간</th>
+			<td>1회</td>
+			<td>13:00시 - 15:00시</td>
+		</tr>
+		<tr>
+			<!-- <td>공연요금</td> -->
+			<td>2회</td>
+			<td>17:00시 - 19:00시</td>
+		</tr>
+	</table>
+	<br>
+	h1{표만들기}^h2{셀합치기}^table[border="1"]>tr*7>td{}*3
+	<br>
+	<br>
+	<table border="1" width="100%">
+		<caption>테블릿 PC와 스마트폰 판매현황</caption>
+		<colgroup>
+			<col width="20%">
+			<col width="40%">
+			<col width="40%">
+		</colgroup>
+		<thead>
+		<tr>
+			<th>구분</th>
+			<th>테블릿 PC</th>
+			<th>스마트폰</th>
+		</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th>총판매수</th>
+				<td>5만대</td>
+				<td>16만대</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<th>상반기 판매수</th>
+				<td>2만대</td>
+				<td>5만대</td>
+			</tr>
+		<tr>
+			<th>하반기 판매수</th>
+			<td>3만대</td>
+			<td>11만대</td>
+		</tr>
+		</tbody>
+		
+	</table>
+</body>
+</html>

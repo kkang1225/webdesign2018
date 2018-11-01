@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>공지사항_글쓰기</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<h3>공지사항 글쓰기</h3>
+	<div class="table_layout">
+		<form action="" name="fwrite" id="fwrite" method="post">
+			<input type="hidden" name="sst" value="">
+			<input type="hidden" name="page" value="">
+			<ul>
+				<li class="table_tr write">
+					<div><label for="wr_name">이름</label></div>
+					<div><input type="text" name="wr_name" id="wr_name" required placeholder="이름" class="frm_input required"></div>
+				</li>
+				<li class="table_tr write">
+					<div><label for="wr_pwd">비밀번호</label></div>
+					<div><input type="password" name="wr_pwd" id="wr_pwd" required placeholder="비밀번호" class="frm_input required"></div>
+				</li>
+				<li class="table_tr write">
+					<div><label for="wr_email">이메일</label></div>
+					<div><input type="text" name="wr_email" id="wr_email" required placeholder="이메일" class="frm_input required"></div>
+				</li>
+				<li class="table_tr write">
+					<div><label for="wr_subject">제목</label></div>
+					<div><input type="text" name="wr_subject" id="wr_subject" required placeholder="제목" class="frm_input subject required"></div>
+				</li>
+				<li class="table_tr write">
+					<div><label for="wr_content">내용</label></div>
+					<div><textarea name="wr_content" id="wr_content" placeholder="내용을 입력해 주세요." class="required" required></textarea></div>
+				</li>
+			</ul>
+		<div class="btn_wrap">
+			<button type="submit" class="btn">확인</button>
+			<button type="button" class="btn" onclick="location.href='table_layout.html'">취소</button>
+		</div>
+		</form>
+	</div>
+</body>
+</html>

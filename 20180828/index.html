@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Slider#3</title>
+	<link rel="stylesheet" href="./css/jquery.bxslider.css">
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var mySlider = $('.slider').bxSlider({
+				auto:true,controls:false,pagerCustom:'.bx-pager'
+			});
+
+			$('#prevBtn').on("click",function(){
+				mySlider.goToPrevSlide();
+			});
+
+			$('#nextBtn').on("click",function(){
+				mySlider.goToNextSlide();
+			});
+		});
+				
+			
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main_slider">
+			<ul class="slider">
+				<li>
+					<img src="./images/main_slider01.jpg" alt="image01">
+					<h2>사랑과 행복을<br>나누는 마음1</h2>
+					<p>우리 사회에는 따뜻한 손길을 필요로 하는 분들이 많습니다.</p>
+					<div class="btn_more">나눔재단바로가기</div>
+				</li>
+				<li>
+					<img src="./images/main_slider01.jpg" alt="image01">
+					<h2>사랑과 행복을<br>나누는 마음2</h2>
+					<p>우리 사회에는 따뜻한 손길을 필요로 하는 분들이 많습니다.</p>
+					<div class="btn_more">나눔재단바로가기</div>
+				</li>
+				<li>
+					<img src="./images/main_slider01.jpg" alt="image01">
+					<h2>사랑과 행복을<br>나누는 마음3</h2>
+					<p>우리 사회에는 따뜻한 손길을 필요로 하는 분들이 많습니다.</p>
+					<div class="btn_more">나눔재단바로가기</div>
+				</li>
+				<li>
+					<img src="./images/main_slider01.jpg" alt="image01">
+					<h2>사랑과 행복을<br>나누는 마음4</h2>
+					<p>우리 사회에는 따뜻한 손길을 필요로 하는 분들이 많습니다.</p>
+					<div class="btn_more">나눔재단바로가기</div>
+				</li>
+			</ul>
+			<div id="prevBtn">
+				<img src="./images/btn_left01.jpg" alt="이전버튼">
+			</div>
+			<div id="nextBtn">
+				<img src="./images/btn_right01.jpg" alt="다음버튼">
+			</div>
+		</div>
+		<div class="main_slider_pager">
+			<div class="bx-pager">
+				<a href="javascript:void(0)" data-slide-index="0">아이티 식수 지원 안내</a>
+				<a href="javascript:void(0)" data-slide-index="1">나눔재단 소개</a>
+				<a href="javascript:void(0)" data-slide-index="2">결식아동 후원 안내</a>
+				<a href="javascript:void(0)" data-slide-index="3">태풍지역 아동 물품 지원 안내</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

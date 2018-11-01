@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="./css/jquery.bxslider.css">
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script>
+		$(document).ready(function(){
+			$('.slider').bxSlider({
+				mode:'vertical',pager:false,controls:false,auto:true
+			});
+		});
+	</script>
+	<style>
+		body{background:#cdcdcd;}
+		.slider>div{height:80px;position:relative;}
+		.slider{background:#cdcdcd;}
+		.slider .iconphoto{width:50px;height:50px;background:url(../testimg.jpg) no-repeat center;border-radius:50%;text-indent:-9999px;
+			position:absolute;}
+		.slider .title{width:300px;line-height:40px;font-size:18px;color:red;font-weight:bold;position:absolute;left:60px;}
+		.slider .subject{width:800px;line-height:30px;background:#fff;border-radius:20px;padding:5px 20px;position:absolute;left:50px;bottom:0;}
+		.slider .subject:before{content:"";/*width:50px;height:50px;*/border-width:5px;border-style:solid;border-color:transparent transparent #fff transparent;position:absolute;top:-5px;left:-5px;transform:rotate(-45deg);}
+		.bx-wrapper{border:none;box-shadow:none;}
+	</style>
+</head>
+<body>
+	<div class="slider">
+		<div>
+			<div class="iconphoto">사진</div>
+			<div class="title">컴퓨터학과</div>
+			<div class="subject">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, libero.</div>
+		</div>
+		<div>
+			<div class="iconphoto">사진</div>
+			<div class="title">디지털컨버전스</div>
+			<div class="subject">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, libero.</div>
+		</div>
+	</div>
+</body>
+</html>

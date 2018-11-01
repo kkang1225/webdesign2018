@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="./css/jquery.bxslider.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/index_style_0820.css">
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			var myslider = $('.slide01').bxSlider({
+				controls:false
+			});
+
+			$('#slide02').bxSlider({
+				controls:false
+			})
+
+			$('.prev').click(function(){
+				myslider.goToPrevSlide();
+				return false;
+			});
+			$('.next').click(function(){
+				myslider.goToNextSlide();
+				return false;
+			});
+
+		})
+	</script>
+</head>
+<body>
+	<div id="container_wrap">
+		<div id="main_header">
+			<div id="main_gnb_wrap">
+				<div id="main_gnb">
+					<ul class="left">
+						<li><a href="#">대학교</a></li>
+						<li><a href="#">입학안내</a></li>
+						<li><a href="#">대학원</a></li>
+					</ul>
+					<ul class="right">
+						<li><a href="#">글자크기</a></li>
+						<li><a href=""><img src="./images/minus.jpg" alt="글자작게"></a></li>
+						<li><a href=""><img src="./images/plus.jpg" alt="글자크게"></a></li>
+						<li><a href="#">찾아오시는 길</a></li>
+						<li><a href="#">ENGILSH</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="header_wrapper">
+				<div id="header_wrap">
+					<div id="header">
+						<div><img src="./images/school.png" alt="학교아이콘"></div>
+						<div class="logo">
+							<p>한국대학교</p>
+							<p>HANGUK UINIVERSITY</p>
+						</div>
+					</div>
+					<div id="menu_bar">
+						<ul>
+							<li><a href="#">대학소개</a></li>
+							<li><a href="#">학과소개</a></li>
+							<li><a href="#">학사안내</a></li>
+							<li><a href="#">대학생활</a></li>
+							<li><a href="#">학생지원센터</a></li>
+							<li><a href="#"><img src="./images/toggle.png" alt="메뉴바이미지"></a></li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		<div id="content_wrap" style="_display:none">
+			<div id="top_content">
+				<div id="text">
+					<h4>함께 나누며 세상을 이끌어</h4>
+					<h3>세계로 향하는 한국대학교</h3>
+				</div>
+				<div id="icon">
+					<ul>
+						<li><a href="#"><img src="./images/icon01.png" alt="">입학절차안내</a></li>
+						<li><a href="#"><img src="./images/icon02.png" alt="">입학설명회</a></li>
+						<li><a href="#"><img src="./images/icon03.png" alt="">장학제도</a></li>
+						<li><a href="#"><img src="./images/icon04.png" alt="">증명서발급</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="slide_wrap">
+				<div >
+					<ul class="slide01">
+						<li><img src="./images/배경02.jpg" alt="왼쪽"></li>
+						<li><img src="./images/배경02.jpg" alt="왼쪽"></li>
+						<li><img src="./images/배경02.jpg" alt="왼쪽"></li>
+						<li><img src="./images/배경02.jpg" alt="왼쪽"></li>
+					</ul>
+					<div class="prev"><a href="#"><img src="../images/prev.jpg" alt="이전버튼"></a></div>
+					<div class="next"><a href="#"><img src="../images/next.jpg" alt="다음버튼"></a></div>
+					<div class="box01"><a href="#">자세히보기 ▶</a></div>
+					<div id="text2">
+						<p><b>한국</b>에서<br><b>시작</b>하는<br>새로운 <b>꿈</b></p>
+					</div>
+				</div>
+				<div id="side">
+						<img src="./images/배경03.jpg" alt="오른쪽">
+					<div id="side_content">
+						
+						<div id="text3">
+							<p><b>APP</b>으로<br><b>스마트 도서관</b><br>바로이용하자!</p>
+						</div>
+						<div id="text4">
+							<p>모바일 열람증은<br>도서관 자료실 / 도서대출 등에<br>사용 할 수 있습니다.</p>
+						</div>
+						<div id="box">
+							<div class="box02"><a href="http://www.naver.com">자세히보기 ▶</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section>
+				<div id="banner">
+					<div id="hotlink">
+						<div class="title">HOT LINK</div>
+							<img src="./images/circle.jpg" alt="원">
+						<div class="link">
+							<a href="#">국제교류<br>센터</a>
+							<a href="#">원격지원<br>시스템</a>
+							<a href="#">예산/결산<br>공고</a>
+						</div>
+					</div>
+					<div id="notice">
+						<div class="title">공지사항</div>
+						<div class="two">
+							<ul class="text5">
+								<li>·[공지] 한국대학교 웹진...</li>
+								<li>·[보도] 우수대학교 선정 수상</li>
+								<li>·[공지] 대학입시 설명회</li>
+								<li>·[공지] 2016년 1학기 성적...</li>
+							</ul>
+							<ul class="date">
+								<li>2018-06-12</li>
+								<li>2018-06-17</li>
+								<li>2018-06-05</li>
+								<li>2018-05-14</li>
+							</ul>
+						</div>
+					</div>
+					<div id="sns">
+						<div class="title">SNS NEWS</div>
+						<div class="school">
+							<img src="./images/학교01.jpg" alt="학교01">
+						</div>
+						<p>한국 대학교는<br>2017학년도 신입생<br>입학식을 3월2일(목)<br>본교 종합체육관...</p>
+						<div class="icon">
+							<a href="#"><img src="./images/facebook.jpg" alt="facebook_icon"></a>
+							<a href="#"><img src="./images/twitter.jpg" alt="twitter_icon"></a>
+							<a href="#"><img src="./images/google.jpg" alt="google_icon"></a>
+							<a href="#"><img src="./images/youtube.jpg" alt="youtube_icon"></a>
+						</div>
+					</div>
+					<div id="tour">
+						<div class="title">캠퍼스투어</div>
+						<div class="name"><a href="#">캠퍼스투어</a></div>
+					</div>
+				</div>
+				<div id="bottom_content">
+					<div id="video">
+						<a href="#"><div class="play">
+							▶
+						</div></a>
+					</div>
+					<div id="slide_wrap2">
+						<ul id="slide02">
+							<li><img src="./images/학생.jpg" alt="학생1"></li>
+							<li><img src="./images/학생.jpg" alt="학생2"></li>
+							<li><img src="./images/학생.jpg" alt="학생3"></li>
+							<li><img src="./images/학생.jpg" alt="학생4"></li>
+						</ul>
+						<p>2017년 신·편입생2차 모집</p>
+						<h2>2017.7.7 ~ 7.10</h2>
+						<div id="before">
+							<div class="box03">
+								<a href="#">입학사전예약 ▶</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="schedule">
+					<p><a href="#"><b>학사일정</b></a></p>
+					<p><a href="#"><b>< 2018 07 ></b></a></p>
+					<p><a href="#">2016-1학기 성적 열람 및 상담 신청</a></p>
+					<p><a href="#">성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</a></p>
+					<a href="#"><img class="first" src="./images/up.jpg" alt=""></a>
+					<a href="#"><img class="second"src="./images/down.jpg" alt=""></a>
+				</div>
+		</section>
+		</div>
+		
+	</div>
+	<footer>
+		<div id="footer_wrap">
+			<div id="main_footer">
+				<ul class="introduce">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">한국 대학교</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">이용정책</a></li>
+					<li><a href="#">입점/제휴문의 및 광고</a></li>
+					<li><a href="#">이메일 무단수집거부</a></li>
+				</ul>
+				<ul class="info">
+					<li><a href="#">대표자:홍길동</a></li>
+					<li><a href="#">서울특별시 구로구 구로로 300(구로동 6가)</a></li>
+					<li><a href="#">사업자등록번호:123-56-7890234</a></li>
+				</ul>
+				<ul class="info">
+					<li><a href="#">통신판매업 신고번호:제1234-서울 구로구-1004호</a></li>
+					<li><a href="#">개인정보관리 책입자:홍길동</a></li>
+					<li><a href="#">소비자피해보상보험</a></li>
+				</ul>
+				<ul class="info">
+					<li><a href="#">고객센터:1234-5678</a></li>
+					<li><a href="#">FAX:02-1234-5678</a></li>
+					<li><a href="#">HANGUKUNIVERSITY@HANGUK.COM</a></li>
+				</ul>
+				<ul class="info">
+					<li><a href="#">COPYRIGHT ⓒHANGUK.ALL.RIGHTS RESERVED.</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

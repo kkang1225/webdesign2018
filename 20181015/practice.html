@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>practice</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		#nav{width:1000px;margin:100px auto;}
+		#nav>ul{}
+		#nav>ul:after{content:"";display:block;clear:both;}
+		#nav>ul>li{float:left;background:#efefef;}
+		#nav>ul>li>a{display:block;width:200px;text-align:center;line-height:50px;}
+		#nav>ul>li.select{background:violet;}
+
+		#nav div{padding:50px;border:4px solid #efefef;border-top:none;}
+	</style>
+	<script>
+		$(function(){
+			$("#nav li").eq(0).addClass("select");
+			$("#nav div").hide().eq(0).show();
+			$("#nav li").on("click",function(){
+				$("#nav li").removeClass();
+				$(this).addClass("select");
+				$("#nav div").hide();
+				$("#nav div").eq($(this).index()).show();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="nav">
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+		</ul>
+		<div>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus necessitatibus blanditiis modi harum velit quasi veniam deserunt esse omnis repellendus, molestiae alias asperiores officia aliquam quaerat, soluta unde porro ipsa nihil, incidunt maxime quae enim beatae dolorem? Ratione debitis ducimus, tenetur esse doloremque alias rem dignissimos, amet sequi ullam, laboriosam.</div>
+		<div>2Recusandae soluta esse deserunt accusamus similique possimus deleniti reprehenderit distinctio voluptas assumenda, error obcaecati tempora, facere quisquam, ut dolore voluptates, delectus modi ea nostrum exercitationem blanditiis repellendus in veritatis. Ipsum dolore laudantium aut quibusdam. Eos minus, sit aliquid tenetur eius quisquam suscipit vero quod placeat dolore amet voluptate labore soluta?</div>
+		<div>3Recusandae quo, natus fugiat atque architecto deleniti, hic. Animi quas cum error odio fuga obcaecati voluptatibus eos laborum illo, libero. Eos ducimus consectetur, veniam tempore quo alias veritatis explicabo, est temporibus expedita dolore neque dicta aspernatur nam repellat officia fugiat hic, quasi nihil quas odit excepturi. Ipsum iusto, quaerat sed.</div>
+		<div>4Eveniet magnam quis assumenda explicabo sit minus debitis similique aut numquam veniam architecto, voluptatibus velit temporibus, odit quaerat incidunt nesciunt corporis, ducimus possimus distinctio eos molestiae repellat? Sapiente, sit laborum iure molestias totam nostrum pariatur ab saepe omnis facilis at dolorum deserunt corporis sed debitis odio, quas nemo! Molestias, illo?</div>
+		<div>5Sunt labore fuga nesciunt accusantium modi molestias sed repellat provident ducimus repudiandae aliquam reiciendis delectus laborum neque ab, blanditiis dolorum debitis tempora sit assumenda asperiores fugiat maxime ipsa eveniet. Cum quo fugit reprehenderit reiciendis nisi fugiat magnam saepe. Optio officia porro laborum deleniti eveniet quidem vitae eaque, ipsam repellendus molestias?</div>
+	</div>
+</body>
+</html>

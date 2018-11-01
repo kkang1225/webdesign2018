@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>setinterval</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script>
+		var nCount = 0;
+		var img01 = null;
+		window.onload = function(){
+			init();
+			start();
+		}
+		function init(){
+			img01=document.getElementById("img01");
+		};
+		function start(){
+			setInterval(changeImage,1000);
+		};
+		function changeImage(){
+			nCount++;
+			if(nCount > 3){nCount = 1;}
+			img01.src = "../images/0" + nCount + ".jpg";
+		};
+	</script>
+</head>
+<body>
+	<div>
+		<div id="panel">
+			<img src="../images/01.jpg" alt="이미지" id="img01">
+		</div>
+	</div>
+</body>
+</html>

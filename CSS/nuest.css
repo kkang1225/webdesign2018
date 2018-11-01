@@ -1,0 +1,8 @@
+@charset "utf-8";
+.container{height:100vh;font-size:1.5rem;background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed;}
+.container header{width:350px;height:100px;text-align:center;position:relative;left:50%;top:50%;margin-left:-170px;margin-top:-50px;display:inline-block;color:#fff;font-family: 'Fugaz One', cursive;}
+.container p{font-family: 'Hi Melody', cursive;}
+.container.one{background-image:url(../images/color2.jpg) ;}
+.container.two{background-image:url(../images/whoyou.jpg);}
+.container.three{background-image:url(../images/nuestwwhere-1.jpg);}
+.container.four{background-image:url(../images/nuest.gif);}

@@ -1,0 +1,7 @@
+@charset "utf-8";
+/*html,body{height:100%;}*/
+.scene{height:100vh;background-size:cover;background-attachment:fixed;}
+.scene.one{background-image:url(../images/w01.jpg);}
+.scene.two{background-image:url(../images/w02.jpg);}
+.scene.three{background-image:url(../images/nuestwwhere-1.jpg);}
+header{color:#fff;width:500px;height:50px;position:relative;top:50%;left:50%;margin-left:-250px;margin-top:-50px;display:inline-block;text-align:center;}

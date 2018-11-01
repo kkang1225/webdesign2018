@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>javascript_dom</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		img{width:80%;height:80%;}
+		div{border:1px solid #000;margin:20px;}
+		div div{border:1px dotted #ccc;}
+		.active{font-size:20px;color:#090;border:5px solid #f00;}
+	</style>
+	<script>
+		window.onload=function(){
+			solveM1();
+			solveM2();
+			solveM3();
+			solveM4();
+			solveM5();
+		}
+		function solveM1(){
+			var m1 = document.getElementById("m_1");
+			m1.style.color="#ff0000";
+		}
+
+		function solveM2(){
+			var m2 = document.getElementById("m_2");
+			m2.className = "active";
+		}
+		function solveM3(){
+			var m3 = document.getElementById("m_3");
+			var img = m3.getElementsByTagName("img")[0];
+
+			console.log(img.src);
+
+			img.setAttribute("src","../images/02.jpg");
+		}
+		function solveM4(){
+			var p4 = document.createElement("p");
+			p4.innerHTML = "항목 4";
+			
+			console.log(p4);
+
+			var m4 = document.getElementById("m_4");
+			m4.appendChild(p4);
+		}
+		function solveM5(){
+			var m5 = document.getElementById("m_5");
+			var ps = m5.getElementsByTagName("p");
+
+			m5.removeChild(ps[1]);
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<div id="m_1">
+			#M_1:글자색을 빨간색으로 변경해주세요.
+		</div>
+	</div>
+	<div>
+		<div id="m_2">
+			#M_2:클래스 active를 적용해주세요.
+			</div>
+	</div>
+	<div>
+		<div id="m_3">
+			#M_3:이미지를 02.jpg로 바꿔주세요.
+			<img src="../images/01.jpg" alt="딸기">
+		</div>
+	</div>
+	<div>
+		<div id="m_4">
+			#M_4:항목 4를 제일 뒤에 추가해주세요.
+			<p>항목 1</p>
+			<p>항목 2</p>
+			<p>항목 3</p>
+		</div>
+	</div>
+	<div>
+		<div id="m_5">
+			#M_5:항목 4를 삭제해주세요.
+			<p>항목 1</p>
+			<p>항목 4</p>
+			<p>항목 2</p>
+		</div>
+	</div>
+</body>
+</html>

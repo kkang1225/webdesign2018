@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>jquery event css</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		#wrap{width:487px;margin:30px auto;}
+		#wrap>ul{}
+		#wrap>ul:after{content:"";display:block;clear:both;}
+		#wrap li{float:left;height:25px;margin-right:6px;overflow:hidden;}
+		#wrap li:last-child{margin-right:0;}
+		#wrap img{margin-top:0;}
+		#wrap a.on img{margin-top:-25px;}
+
+		#content{width:487px;height:323px;position:relative;}
+		#content div{position:absolute;left:0;top:0;width:486px;background:#55aaea;padding:16px;margin-top:16px;display:none;}
+	</style>
+	<script>
+		$(function(){
+			var $tab = $("#tab li");
+			var $content = $("#content>div");
+
+			$tab.on("click",function(e){
+				var i = $(this).index();
+				e.preventDefault();
+				$tab.find("a").removeClass();
+				$(this).find("a").addClass("on");
+				$content.css("display","none");
+				$content.eq(i).css("display","block");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<ul id="tab">
+			<li><a href="#menu1" class="on"><img src="../images/tab01.png" alt="menu01"></a></li>
+			<li><a href="#menu2"><img src="../images/tab02.png" alt="menu02"></a></li>
+			<li><a href="#menu3"><img src="../images/tab03.png" alt="menu03"></a></li>
+			<li><a href="#menu4"><img src="../images/tab04.png" alt="menu04"></a></li>
+		</ul>
+		<div id="content">
+			<div style="display:block;"><img src="../images/img01.png" alt="img01"></div>
+			<div><img src="../images/img02.png" alt="img02"></div>
+			<div><img src="../images/img03.png" alt="img03"></div>
+			<div><img src="../images/img04.png" alt="img04"></div>
+		</div>
+	</div>
+</body>
+</html>

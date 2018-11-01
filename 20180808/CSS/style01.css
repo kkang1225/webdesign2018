@@ -1,0 +1,8 @@
+@charset "utf-8";
+#wrap{width:1000px;margin:0 auto;}
+#main_header{height:100px;background:#cdcdcd;}
+#main_container{background:green;position: relative;float:left;width:100%;}
+#main_aside{width:200px;height:200px;background:pink;position: absolute;}
+#main_section{width:800px;height:800px;background:skyblue;float:right;}
+#box{width:30px;height:50px;background:red;position:fixed;right:10px;top:50px;}
+#main_footer{height:200px;background: #000;clear:both;}

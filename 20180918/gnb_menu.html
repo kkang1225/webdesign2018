@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>submenu</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		a:link,a:visited{color:#fff;}
+		.navbar{background:#333;position:relative;}
+		
+		.subnav a{display:block;font-size:16px;padding:14px 16px;}
+		.subnav:hover{background:#f00;}
+
+		.subnav-content{display:none;}
+		/*.navbar>li:nth-child(2) .subnav-content{display:block;}*/
+		
+		.navbar>li:last-child{position:absolute;right:0;top:0;display:none;}
+
+		@media only screen and (min-width:1001px){
+	/*main_menu*/	
+		.navbar:after{content:"";display:block;clear:both;}
+		.subnav{float:left;transition:0.3s;}
+	/*sub_menu*/
+		.subnav-content{_width:100%;position:absolute;_left:0;}
+		.subnav-content:after{content:"";display:block;clear:both;}
+		.subnav-content>li{float:left;}
+
+		.subnav:hover .subnav-content,
+		.subnav:hover .back{display:block;}
+
+		.back{width:100%;height:50px;background:#f00;position:absolute;left:0;display:none;}
+
+		
+		}
+
+		@media only screen and (max-width:1000px){
+			.myLinks{display:none;}
+			.navbar>li:last-child{display:block;}
+			.navbar>li+li a{text-align:center;}
+			.fa-caret-down{display:none;}
+
+		}
+	</style>
+	<script>
+		
+		window.addEventListener("resize",winFunction);
+
+		function winFunction(){
+			var x = document.getElementsByClassName("myLinks");
+
+			if(window.innerWidth>1000){
+				for(var i=0;i<x.length;i++){
+					x[i].style.display="block";
+				}
+			}else{
+				for(var i=0;i<x.length;i++){
+					x[i].style.display="none";
+				}
+			}
+
+
+		}
+
+
+
+
+
+		function myFunction(){
+			var x = document.getElementsByClassName("myLinks");
+
+		for(var i=0;i<x.length;i++){
+			if(x[i].style.display==="block"){
+				
+				
+				x.item(i).style.display="none";
+				// x[i].style.display="none";
+				// x[i].style.display="none";
+			
+			}else{
+
+			x.item(i).style.display="block";
+			// x[1].style.display="block";
+			// x[2].style.display="block";
+			}
+		}
+			// if(x[0].style.display==="block"){
+			// 	for(var i=0;i<x.length;i++){
+			// 	x[i].style.display="none";
+			// 	}
+			// }else{
+			// 	for(var i=0;i<x.length;i++){
+			// 		x[i].style.display="block";
+			// 	}
+			// }
+		}
+	</script>
+</head>
+<body>
+	<ul class="navbar">
+		<li class="subnav">
+			<a href="#" class="subnavbtn">Home</a>
+		</li>
+		<li class="subnav myLinks">
+			<a href="#" class="subnavbtn">menu01 <i class="fas fa-caret-down"></i></a>
+			<div class="back"></div>
+			<ul class="subnav-content" style="left:0;">
+				<li><a href="#">smenu01_01</a></li>
+				<li><a href="#">smenu01_02</a></li>
+				<li><a href="#">smenu01_03</a></li>
+			</ul>
+		</li>
+		<li class="subnav myLinks">
+			<a href="#" class="subnavbtn">menu02 <i class="fas fa-caret-down"></i></a>
+			<div class="back"></div>
+			<ul class="subnav-content" style="left:48px;">
+				<li><a href="#">smenu02_01</a></li>
+				<li><a href="#">smenu02_02</a></li>
+				<li><a href="#">smenu02_03</a></li>
+			</ul>
+		</li>
+		<li class="subnav myLinks">
+			<a href="#" class="subnavbtn">menu03 <i class="fas fa-caret-down"></i></a>
+			<div class="back"></div>
+			<ul class="subnav-content" style="left:143px;">
+				<li><a href="#">smenu03_01</a></li>
+				<li><a href="#">smenu03_02</a></li>
+				<li><a href="#">smenu03_03</a></li>
+			</ul>
+		</li>
+		<li class="subnav">
+			<a href="javascript:void(0)" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+		</li>
+	</ul>
+	<div style="width:100%;height:500px;background:#c0c0c0;">
+	Lorem ipsum dolor sit amet.
+	</div>	
+</body>
+</html>

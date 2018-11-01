@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float layer</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a:link,a:visited{color:#000;}
+		a{text-decoration:none;}
+		body{font:12px/1.5 "굴림",Gulim;margin:10px;}
+
+		#container{width:530px;background:#fdf;/*overflow:hidden;*/}
+		#container:after{content:"";display:block;clear:both;}
+		.menu{width:130px;padding:10px;float:left;}
+		.content{width:350px;padding:10px;border-left:1px solid #ccc;float:right;}
+
+	</style>
+</head>
+<body>
+	<!-- div>#container>(div.menu>ul>li*3>a[href=""]>{menu$})+(div.content>p>lorem20)^div.footer>address>{&copy;2018 Copyright All right reserved.} -->
+	<div>
+		<div id="container">
+			<div class="menu">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">제품안내</a></li>
+					<li><a href="#">커뮤니티</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ratione assumenda neque, quam perferendis. Recusandae laboriosam vitae eos temporibus? Quos iste aut possimus necessitatibus quidem blanditiis optio, vitae quibusdam velit! Reprehenderit sapiente odio ad a ex reiciendis omnis ipsum. Blanditiis vitae doloremque assumenda nostrum inventore, ea distinctio dignissimos consequatur facilis dolore, veniam eaque recusandae minima eius obcaecati, nam, eveniet explicabo ratione repudiandae sit. Enim deserunt, soluta magnam doloremque modi iure quasi fugit illum velit eaque pariatur ad aliquid, nisi voluptas, earum autem. Provident, quasi, aperiam. Aperiam reprehenderit asperiores pariatur magnam, voluptatum, veritatis, ullam totam eligendi cupiditate aspernatur sint impedit facere.</p>
+			</div>
+		</div>
+		<div class="footer">
+			<address>&copy;2018 Copyright All right reserved.</address>
+		</div>
+	</div>
+</body>
+</html>

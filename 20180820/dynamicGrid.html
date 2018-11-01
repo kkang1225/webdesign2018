@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="./css/jquery.bxslider.css">
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<link rel="stylesheet" href="../CSS/dynamic_style0820.css">
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slider1').bxSlider({
+				auto:true
+			});
+			$('.slider2').bxSlider({
+				controls:false
+			});
+		});
+	</script>
+	<script>
+		function bgclick(){
+			document.getElementsByTagName('body')[0].style.background="url(../images/w01.jpg)";
+		}
+		function bgclick1(){
+			document.getElementsByTagName('body')[0].style.background="";
+		}
+	</script>
+</head>
+<body>
+	<div id="button" style="width:200px;height:200px;position:absolute">
+		<div class="btn blue" style="width:100px" onclick="bgclick()">배경변경</div>
+		<div class="btn blue" style="width:100px" onclick="bgclick1()">초기값</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="span_12">
+				<div class="slider1">
+					<div class="imgview"><img src="../images/pc01.jpg" alt=""></div>
+					<div class="imgview"><img src="../images/pc02.jpg" alt=""></div>
+					<div class="imgview"><img src="../images/pc03.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="row bg-skyblue">
+			<div class="span_6 md_vnone">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum error quos vero consectetur reiciendis eaque laboriosam nemo quas excepturi natus! Aliquid reprehenderit, ad corporis temporibus suscipit, repellat doloremque repellendus accusantium perspiciatis, nostrum perferendis saepe autem. Esse, veniam magnam ipsam accusantium, cumque maxime fugit, quasi distinctio iure tempora quibusdam ut tempore.</div>
+			<div class="span_6" id="slider2wrap">
+				<div class="slider2">
+					<div class="imgview"><img src="../images/pc03.jpg" alt=""></div>
+					<div class="imgview"><img src="../images/pc02.jpg" alt=""></div>
+					<div class="imgview"><img src="../images/pc01.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span_4">
+				<div class="card">
+					<img src="../testimg.jpg" alt="card image" class="card-img-top">
+					<div class="card-body">
+						<h4 class="card-title">강예솔</h4>
+						<p class="card-text">대표</p>
+						<div class="btn blue"><a href="tel:01045579811">010-4557-9811</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="span_4 mo_vnone">
+				<div class="card">
+					<img src="../testimg.jpg" alt="card image" class="card-img-top">
+					<div class="card-body">
+						<h4 class="card-title">강예솔</h4>
+						<p class="card-text">대표</p>
+						<div class="btn blue"><a href="tel:01045579811">010-4557-9811</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="span_4 md_vnone mo_vnone">
+				<div class="card">
+					<img src="../testimg.jpg" alt="card image" class="card-img-top">
+					<div class="card-body">
+						<h4 class="card-title">강예솔</h4>
+						<p class="card-text">대표</p>
+						<div class="btn blue"><a href="tel:01045579811">010-4557-9811</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span_3">
+				<div class="card">
+					<img src="../testimg.jpg" alt="card image" class="card-img-top">
+					<div class="card-body">
+						<h4 class="card-title">강예솔</h4>
+						<p class="card-text">대표</p>
+						<div class="btn red"><a href="tel:01045579811">010-4557-9811</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="span_3 mo_vnone">
+				<div class="card">
+					<img src="../testimg.jpg" alt="card image" class="card-img-top">
+					<div class="card-body">
+						<h4 class="card-title">강예솔</h4>
+						<p class="card-text">대표</p>
+						<div class="btn red"><a href="tel:01045579811">010-4557-9811</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="span_3 mo_vnone">
+				<div class="card">
+					<img src="../testimg.jpg" alt="card image" class="card-img-top">
+					<div class="card-body">
+						<h4 class="card-title">강예솔</h4>
+						<p class="card-text">대표</p>
+						<div class="btn red"><a href="tel:01045579811">010-4557-9811</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="span_3 mo_vnone">
+				<div class="card">
+					<img src="../testimg.jpg" alt="card image" class="card-img-top">
+					<div class="card-body">
+						<h4 class="card-title">강예솔</h4>
+						<p class="card-text">대표</p>
+						<div class="btn red"><a href="tel:01045579811">010-4557-9811</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row bg-yellow">
+			<div class="span_2_4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias incidunt soluta reprehenderit rem nam voluptates, animi libero accusantium, illum ipsa quia rerum aliquam fugit officia sit temporibus ad, ex sed voluptatibus facere! Nam rem molestiae aliquam aspernatur, officia mollitia ipsam iure quas, dolorem, iusto temporibus nisi non porro possimus magni!</div>
+			<div class="span_2_4">Iste eum obcaecati unde, facilis vero laudantium eaque aut, quis optio fugit expedita vitae ad beatae aliquam quia assumenda velit nulla quae! Consequuntur dolore error, aut quod cum dolorem, vel ut, ipsam iste corrupti fugiat quis possimus dolor minima natus sequi autem veritatis. Quae assumenda, error dolore, consequatur nisi aliquam!</div>
+			<div class="span_2_4">Nemo assumenda repudiandae unde, totam iusto architecto in dolor harum earum, accusamus dolores enim distinctio, maxime officiis ratione similique laborum. Reiciendis fugit libero veritatis quis consequuntur vero deserunt natus nostrum quos unde nihil inventore dolorem modi obcaecati laudantium fuga possimus incidunt culpa error at dicta et ex, eligendi officiis! Rerum.</div>
+			<div class="span_2_4">Facilis aliquid dolorem nisi. Magni ipsa illo ad eius nemo, eos quasi debitis. Fugiat veritatis voluptas iure illo, earum repudiandae, aliquid hic quia velit sint ratione? Saepe porro possimus deleniti maxime veniam asperiores quod repudiandae iusto provident itaque ipsam sed ullam rem similique, consectetur, quae deserunt enim. Ullam, dicta, maiores?</div>
+			<div class="span_2_4">Accusantium libero deleniti dignissimos amet eligendi ad, pariatur animi accusamus ipsam provident, optio voluptatum blanditiis, explicabo. Officia sit, minus voluptas magni nulla et optio id magnam. Sequi eveniet molestias id, et optio, ipsum laudantium libero corrupti repellendus animi aliquam quisquam hic nemo architecto odit maxime nulla! Maiores nisi, tempore ipsam.</div>
+		</div>
+		<div class="row bg-green">
+			<div class="span_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam libero a unde adipisci est id nostrum, neque dolorum, corrupti nemo quod accusantium molestiae sed vel inventore mollitia! Deserunt inventore itaque delectus consequatur expedita. Temporibus enim alias, magnam, voluptate itaque beatae saepe reiciendis facilis maiores optio pariatur iste voluptatem in quae!</div>
+			<div class="span_2">Consectetur iste quod, dolores eum ipsam doloribus hic possimus minus temporibus quasi. Sint consequatur dolorum consectetur dolore deleniti, a temporibus numquam, aut repudiandae optio odit? Aspernatur neque debitis provident odio possimus! Obcaecati perferendis eos, totam, qui maiores in impedit neque quas ullam officiis blanditiis nam doloribus placeat ratione modi iste?</div>
+			<div class="span_2">Earum qui magnam doloribus, dolorem aperiam, totam odit esse cumque quasi nesciunt nemo reiciendis nobis sed molestiae omnis ab aut laboriosam enim impedit velit dolore temporibus doloremque. Vero sint, veniam fugit delectus quasi quae neque maiores facilis cumque sed. Velit hic nam exercitationem, placeat omnis quaerat porro expedita dolore unde.</div>
+			<div class="span_2">Eligendi laboriosam soluta, itaque aperiam asperiores ullam qui ipsum debitis, dolorum necessitatibus excepturi, sunt in eos! Dolores, odit consequatur cum qui cumque officia fugiat ea accusantium. Voluptates facilis quas, magni rerum eum sunt consectetur non architecto placeat voluptas id odio eaque vitae facere unde qui? Placeat amet voluptatem expedita corrupti.</div>
+			<div class="span_2">Illo nostrum accusamus necessitatibus voluptatibus, veritatis excepturi ex voluptates reprehenderit, eius repellat iure nam expedita in ea cupiditate fugit corporis rerum delectus magni non ab iusto. Repellat eveniet suscipit omnis vitae fugit excepturi quia, similique id amet natus maiores, voluptatem quae voluptates in autem impedit, veniam cumque, placeat rerum rem.</div>
+			<div class="span_2">Iusto, nulla dolor neque quisquam quo fugit eveniet facilis ex et repudiandae rem adipisci fugiat repellendus quos quidem! Ad ratione repellendus sequi in tempora ipsum quas accusantium minus iusto voluptate, laudantium quisquam accusamus incidunt, nulla possimus dolores quae similique delectus optio enim quibusdam, quis earum explicabo autem. Iste, aliquam, ducimus.</div>
+		</div>
+	</div>
+</body>
+</html>

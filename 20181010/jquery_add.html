@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>jquery add</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		li{border:1px solid #000;margin:10px;padding:5px;}
+		li.select{background:#ccc;}
+		li.afterNew{background:skyblue;}
+		li.beforeNew{background:pink;}
+	</style>
+	<script>
+		$(document).ready(function(){
+			//노드 추가/생성
+			// var count = 0;
+			// $("#btnAfterAdd").click(function(){
+			// 	count++;
+			// 	var li = $("<li class='afterNew'>menu" + count + "</li>")
+			// 	$(".menu").append(li);
+			// });
+	
+			// $("#btnBeforeAdd").click(function(){
+			// 	count++;
+			// 	var li = $("<li class='beforeNew'>menu" + count + "</li>")
+			// 	$(".menu").prepend(li);
+			// });
+
+
+			// $("#beforeAdd").click(function(){
+			// 	count++;
+			// 	var li = $("<li class='beforeNew'>menu" + count + "</li>")
+			// 	$("ul.menu li.select").before(li);
+			// });
+	
+			// $("#afterAdd").click(function(){
+			// 	count++; 
+			// 	var li = $("<li class='afterNew'>menu" + count + "</li>")
+			// 	$("ul.menu li.select").after(li);
+			// });
+
+			//노드 이동
+			// var $menu = $("ul.menu");
+			// $("ul.menu li:eq(1)").click(function(){
+			// 	$menu.prepend($("li.select"));
+			// });
+
+			// $("ul.menu li:eq(0)").click(function(){
+			// 	$menu.append($("li.select"));
+			// });
+
+			//노드 제거
+			// $("ul.menu li").click(function(){
+			// 	$(this).remove();
+			// });
+
+			// $("#remove").click(function(){
+			// 	$("ul.menu").children().remove();
+			// 	//$("ul.menu li:even").remove();
+			// });
+
+			//노드 내용 읽기
+			// $("#ok").click(function(){
+			// 	console.log($("ul.menu").html());
+			// });
+
+			//노드 내용을 이용해 여러개의 자식 노드 추가
+			$("#add").click(function(){
+				var data="";
+				for(var i=1;i<=10;i++){
+					data+="<li>menu" + i + "</li>";
+				}
+				$("ul.menu").html(data);
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<!-- <button id="btnBeforeAdd">첫번째에 추가</button>
+	<button id="btnAfterAdd">마지막에 추가</button>
+	<button id="beforeAdd">select앞에 추가</button>
+	<button id="afterAdd">select뒤에 추가</button> 
+	<button id="remove">삭제</button>
+	<button id="ok">확인</button>-->
+	<button id="add">추가</button>
+	
+	<ul class="menu">
+		<!-- <li>menu1</li>
+		<li>menu2</li>
+		<li class="select">menu3</li>
+		<li>menu4</li>
+		<li>menu5</li>
+		<li>menu6</li> -->
+	</ul>
+</body>
+</html>

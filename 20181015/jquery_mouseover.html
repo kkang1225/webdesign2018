@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>jquery mouseover</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		#parents{width:300px;height:100px;position:absolute;left:200px;top:100px;background:#f00;}
+		#child{width:100px;height:200px;position:absolute;left:100px;top:0px;background:#fff;}
+		#child div{height:100px;}
+		#child>div:last-child{background:#ff0}
+	</style>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			var count = 0;
+			var $info = $("#info");
+			var $child = $("#child");
+
+			$("#parents").mouseenter(function(){
+				count++;
+				$info.html($info.html()+"<br>"+count+"over");
+				$child.animate({top:-100},300);
+			});
+
+			$("#parents").mouseleave(function(){
+				count++;
+				$info.html($info.html()+"<br>"+count+"out");
+				$child.animate({top:0},300)
+			});  
+		});
+	</script>
+</head>
+<body>
+	<div id="info">
+		이벤트 정보 출력
+	</div>
+	<div id="parents">
+		parents
+		<div id="child">
+			<div>out</div>
+			<div>over</div>
+		</div>
+	</div>
+</body>
+</html>

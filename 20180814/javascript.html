@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>if~else if</title>
+	<style>
+		span{color:red;font-weight:bold;}
+	</style>
+</head>
+<body>
+	<div id="box">당신의 학점은</div>
+	<script>
+		var point=100;
+		var grade;
+
+		if(point>100){document.write("0~100점 사이의 값을 입력하시오.");}
+		else if(point>=90){grade="A"; document.write("아주 잘했어요.");}
+		else if(point>=80){grade="B"; document.write("잘했어요.");}
+		else if(point>=70){grade="C"; document.write("노력이 필요합니다.");}
+		else if(point>=60){grade="D"; document.write("좀 더 노력하세요.");}
+		else{grade="F"; document.write("많은 노력이 필요합니다.");}
+		// document.write("<br>학생의 학점은 <span>"+grade+"</span> 입니다.");
+		document.getElementById("box").innerHTML=grade;
+		console.log(grade);
+	</script>
+</body>
+</html>

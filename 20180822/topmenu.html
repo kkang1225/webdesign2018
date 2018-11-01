@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>TOP_menu</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="topnav">
+		<a href="#" class="active"><i class="fas fa-home"></i>HOME</a>
+		<a href="#"><i class="far fa-newspaper"></i>NEWS</a>
+		<a href="#"><i class="fas fa-compress"></i>CONTACT US</a>
+		<a href="#"><i class="fas fa-info-circle"></i>ABOUT</a>
+		<a href="javascript:void(0)" class="icon" onclick="menuOpen()">
+			<i class="fas fa-bars"></i>
+		</a>
+		<a href="#" class="X" onclick="menuClose()"><i class="fas fa-window-close"></i></a>
+	</div>
+	<div class="content">
+		<h2>Lorem ipsum dolor.</h2>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+	<script>
+		function menuOpen(){
+			var x = document.getElementsByTagName('a');
+			// x.item(1).style.display = "block";
+			// x.item(2).style.display = "block";
+			// x.item(3).style.display = "block";
+
+			for(var i=1;i<=3;i++){
+			x.item(i).style.display = "block";}
+			
+			x.item(4).style.display ="none";
+			x.item(5).style.display ="block";
+
+			
+			}
+
+			function menuClose(){
+			var x = document.getElementsByTagName('a');
+			// x.item(1).style.display = "block";
+			// x.item(2).style.display = "block";
+			// x.item(3).style.display = "block";
+
+			for(var i=1;i<=3;i++){
+			x.item(i).style.display = "none";}
+			
+			x.item(4).style.display ="block";
+			x.item(5).style.display ="none";
+
+			
+			}
+		
+	</script>
+</body>
+</html>

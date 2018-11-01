@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>문서 제목</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:black;}
+		img{display:block;}
+
+		#main_header{height:45px;background:url(../20180802/header_background.png);text-align:center;position:relative;}
+		#main_header h1{color:#fff;}
+		#main_header a,#main_header label{display:block;background:url(../20180802/sprites.png);position:absolute;height:32px;top:7px;text-indent:-9999px;}
+		#main_header a.left{width:62px;background-position:0 0;left:5px;}
+		#main_header>label.right{width:32px;background-position:-62px 0;right:5px;}
+		
+		#toggle_gnb_wrap{background:#363636;padding:15px;}
+		#toggle_gnb{background:#fff;padding:5px;}
+		#toggle_gnb>ul:after{content:"";display:block;clear:both;}
+		#toggle_gnb li{float:left;width:80px;}
+		#toggle_gnb a{display:block;text-align:center;line-height:25px;}
+
+		#toggle{display:none;}
+		#wrap>#toggle_gnb_wrap{display:none;}
+		#toggle:checked+#wrap>#toggle_gnb_wrap{display:block;}
+
+		#top_gnb{background:#b42111;border-bottom: 1px solid #000;}
+		#top_gnb:after{content:"";display: block;clear: both;}
+		#top_gnb div{float:left;width:25%;}
+		#top_gnb a{display: block;line-height:35px;text-align:center;color:#fff;}
+
+		#bottom_gnb{width:100%;display:table;border-bottom:1px solid #000;}
+		#bottom_gnb div{display:table-cell;position:relative;}
+		#bottom_gnb a{display:block;line-height:35px;text-align: center;}
+		#bottom_gnb a:before{content:"|";position:absolute;left:0;left:-3px;color:red;}
+
+		#main_section{margin:10px;}
+		#section_header{margin:20px;}
+		#section_article{margin:10px;}
+		#section_article p{text-align:justify;}
+
+		#main_footer{margin:10px;border-top:3px solid #000;text-align: center;}
+
+
+	</style>
+</head>
+<body>
+	<input type="checkbox" id="toggle">
+	<div id="wrap">
+		<header id="main_header">
+			<a href="#" class="left">Main</a>
+			<h1>Mobile</h1>
+			<label for="toggle" class="right" onclick>Toggle</label>
+		</header>
+		<div id="toggle_gnb_wrap">
+			<div id="toggle_gnb">
+				<ul>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+					<li><a href="#">버튼</a></li>
+				</ul>
+			</div>
+		</div>
+		<nav id="top_gnb">
+			<div><a href="#">button</a></div>
+			<div><a href="#">button</a></div>
+			<div><a href="#">button</a></div>
+			<div><a href="#">button</a></div>
+		</nav>
+		<nav id="bottom_gnb">
+			<div><a href="#">button</a></div>
+			<div><a href="#">button</a></div>
+			<div><a href="#">button</a></div>
+			<div><a href="#">button</a></div>
+			<div><a href="#">button</a></div>
+		</nav>
+		<section id="main_section">
+			<header id="section_header">
+				<h2>Lorem ipsum.</h2>
+				<time>2018-08-03 - Birthday</time>
+			</header>
+			<article id="section_article">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vitae porro recusandae soluta doloremque nisi alias iste laborum accusantium corporis nesciunt blanditiis, quos minus perferendis quaerat qui, esse delectus. Odio earum beatae tempora, provident nostrum, molestias exercitationem nam animi, cum voluptatem deserunt illum omnis temporibus quod, accusamus. Vel nemo quasi ipsam vero harum iste et ex praesentium assumenda tempora at quae voluptatem beatae possimus deserunt maxime, doloremque officia explicabo odit. Inventore, placeat error ea, earum explicabo obcaecati tempore dicta ipsam dolorem ut atque in ab aliquam quisquam nesciunt corporis doloremque maxime. Ab possimus sint animi et temporibus ullam numquam? Omnis.</p>
+				<br>
+				<p>Veritatis voluptas laudantium id laboriosam sapiente, ex quibusdam. Minima vitae, ipsa eum commodi quam pariatur. Fugiat eum, excepturi! Qui delectus, quae ullam quam saepe hic expedita deleniti harum nostrum nemo dolorem rem assumenda illum, enim ad ipsam deserunt aspernatur sequi eaque nisi adipisci dolores commodi eos, vitae. Quo, quasi incidunt vel. Quia, eius aperiam quasi architecto incidunt enim neque laborum fuga. Eius vero eligendi quas, tenetur distinctio libero aperiam obcaecati provident ipsam quaerat deserunt cupiditate consectetur quae labore, impedit asperiores similique harum, molestias a autem sit repudiandae voluptatum minima enim. Voluptatibus laborum mollitia obcaecati nostrum cumque quasi, vero in excepturi.</p>
+				<br>
+				<p>Eius quidem, unde illum commodi odio, nihil, aliquid in ducimus rerum consequatur maiores, quaerat voluptas. Quia, suscipit repellat aspernatur laborum, ex sit dolorum cumque aliquam error eum rerum corrupti molestiae. Officiis cumque, assumenda perferendis quis laudantium. Placeat aliquid iusto magni aliquam enim, quod quam voluptatem beatae quos saepe officia ab doloremque animi temporibus excepturi est aperiam, cupiditate itaque facilis nostrum recusandae neque dolore. Ad distinctio ratione consequuntur, ipsa ducimus quod modi assumenda vero magnam facilis maiores ea unde quos dignissimos quisquam veniam rerum saepe! Commodi magnam repellendus ad, ratione aliquam cumque, tempore, totam architecto reiciendis odit tempora voluptate harum rem.</p>
+			</article>
+		</section>
+		<footer id="main_footer">
+			<h3>Lorem ipsum dolor.</h3>
+			<address>Website Layout Basic</address>
+		</footer>
+	</div>
+</body>
+</html>

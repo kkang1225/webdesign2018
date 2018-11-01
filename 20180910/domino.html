@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>domino</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		body,th,td,input,select,textarea,button{font-size:13px;font-family:'Noto Sans KR',Tahoma,sans-serif;font-weight:400; color:#48525f;}
+		.main .main_bnr_wrap .bnr_section>div{overflow:hidden;height:100%;background-color: #fff;box-shadow:2px 2px 3px rgba(81,76,68,0.14)}
+		.main .main_bnr_wrap .bnr_section{float:left;width:492px;height:140px;margin-top:20px;}
+		.main .main_bnr_wrap .bnr_section:after{display:block;content:'';clear:both;}
+		.main .main_bnr_wrap .bnr_notice{width:492px;height:140px;position:relative;padding:15px 20px;background-color:#fff;}
+		.main .main_bnr_wrap .bnr_notice dd ul li{padding-top:11px;padding-left: 10px;margin-top:12px;background:url(./img/bg/bg_dot_line.png) repeat-x 8px 0;}
+		.main .main_bnr_wrap .bnr_notice dt{font-size:17px;font-weight:700;color:#38474f;}
+		.main .main_bnr_wrap .bnr_notice dd{margin-top:15px;}
+		.main .main_bnr_wrap .bnr_notice dd ul li:first-child{margin-top:0;padding-top:0;background:none;padding-left:10px;}
+		.main .main_bnr_wrap .bnr_notice dd ul li:last-child{background: none;}
+		.bnr_notice li{display:list-item;text-align:-webkit-match-parent;}
+		div{display:block;}
+		.main .main_bnr_wrap .bnr_notice dd ul li a{display:block;overflow:hidden;position:relative;/*padding-left:14px*/;font-size:14px;color:#38474f;text-overflow:ellipsis;white-space:nowrap;word-break:break-all;}
+		.main .main_bnr_wrap .bnr_notice dd ul li.important_nt a{padding-left:26px;}
+		.main .main_bnr_wrap .bnr_notice dd ul li.important_nt a:after{display:none;}
+		.main .main_bnr_wrap .bnr_notice dd ul li.important_nt .ico_notice{position:absolute;top:50%;left:0;margin-top:-8px;}
+		.ico{display:inline-block;background:url(./img/ico/spr_ico.png) no-repeat 0 0;vertical-align:middle;}
+		.ico_notice{width:16px;height:16px;background-position:0 -30px;margin-right: 5px;}
+		.main .main_bnr_wrap .bnr_notice .btn_more{position:absolute;top:20px;right:25px;}
+		.btn_more{width:24px;height:24px;background-position:-40px -40px;}
+		.btn_ico{display:inline-block;overflow:hidden;background:url(./img/btn/spr_btn.png) no-repeat -40px -40px;text-indent:-999em;vertical-align:middle;}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="main_bnr_wrap">
+			<div class="bnr_section">
+				<div class="bnr_notice">
+				                    <dl>
+				                        <dt>공지사항</dt>
+				                        <dd>
+										<ul id="noticeList"><li><a href="/bbs/newsView?idx=2040&amp;type=N"><span class="ico ico_notice"></span> 도미노피자 로그인&amp;수신동의 이벤트 당첨자 안내</a></li><li><a href="/bbs/newsView?idx=2039&amp;type=N"><span class="ico ico_notice"></span> 도미노 파티카 10주년 기념 고객 대상 8월 이벤트 당첨자 안내</a></li><li><a href="/bbs/newsView?idx=2038&amp;type=N"><span class="ico ico_notice"></span> 도미노피자 개인정보 처리방침 개정 안내</a></li></ul>
+									</dd>
+								</dl>
+								<a href="/bbs/newsList?type=N" class="btn_ico btn_more">더보기</a>
+				                </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

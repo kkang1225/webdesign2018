@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:#fff;}
+
+		#main_header{background:#1d4088;height:60px;border-bottom: 1px solid #000;color:#fff;height:60px;line-height:60px;padding-left:10px;}
+		#main_gnb{border-bottom:1px solid #000;background:#32394a;}
+		#main_gnb:after{content:"";display:block;clear:both;}
+		#main_gnb>ul.left{float:left;}
+		#main_gnb>ul.left:after{content:"";display:block;clear:both;}
+		#main_gnb>ul.left>li{float:left;}
+		#main_gnb>ul.right{float:right;}
+		#main_gnb>ul.right:after{content:"";display:block;clear:both;}
+		#main_gnb>ul.right>li{float:right;}
+		#main_gnb a{display:block;padding:10px 20px;font-weight:bold;}
+		#main_gnb a:hover{background:skyblue;color:#000;}
+		body{min-width:760px;}
+
+		/*#wrap:after{content:"";display:block;clear:both;}*/
+		#wrap{overflow:hidden;}
+		#wrap{background:#71b1d1;border-bottom:1px solid #000;}
+		#main_lnb{float:left;width:200px;}
+		#content_wrap{float:left;width:100%;background: #fff;border-left: 1px solid #000;padding:20px;box-sizing:border-box;margin-right:-200px;}
+		#main_lnb a{display:block;height:40px;line-height:40px;padding-left:20px;border-top:1px solid #96d6f6;border-bottom:1px solid #6298b2;}
+		#main_lnb a:hover{background:lightgray;}
+		#content{padding-right:200px;}
+		#main_footer{padding:10px;border-top:3px solid #000;text-align:center;}
+	</style>
+</head>
+<body>
+	<header id="main_header">
+		<h1>Fluid</h1>
+	</header>
+		<nav id="main_gnb">
+			<ul class="left">
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Button</a></li>
+			</ul>
+			<ul class="right">
+				<li><a href="#">Button</a></li>
+				<li><a href="#">Button</a></li>
+			</ul>
+		</nav>
+		<div id="wrap">
+			<nav id="main_lnb">
+				<ul>
+					<li><a href=":#">Button</a></li>
+					<li><a href=":#">Button</a></li>
+					<li><a href=":#">Button</a></li>
+					<li><a href=":#">Button</a></li>
+					<li><a href=":#">Button</a></li>
+				</ul>
+			</nav>
+			<div id="content_wrap">
+				<div id="content">
+					<article>
+						<h1>Lorem ipsum dolor sit amet.</h1>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident temporibus facilis sapiente necessitatibus, neque dolor dolores error sequi, repudiandae a esse quas fugiat aut. Hic aperiam, ipsam consequatur nesciunt. Earum quis inventore perspiciatis dicta. Architecto a, delectus illo optio eius repellat molestias, doloremque beatae expedita maiores esse excepturi doloribus facere, quod, dolor accusamus quae dolorum et. Magnam ratione, recusandae ut suscipit incidunt fugiat, quis nulla sunt, a eius reprehenderit saepe rerum doloremque obcaecati impedit. Deserunt soluta, quibusdam fugit est. Quae, vero, consequuntur! Deserunt, repellendus quod. Quam nihil soluta adipisci temporibus earum, aspernatur sapiente voluptates nesciunt nobis, voluptatem dignissimos fugiat suscipit!</p>
+						<br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iusto atque, praesentium fugiat laborum incidunt, neque sapiente fuga similique consequatur vel reprehenderit, eligendi tempora doloribus, debitis. Doloribus ipsa quo eaque, explicabo repellendus natus! Nostrum voluptatem dicta quas ut modi sint eveniet ratione doloremque ad, accusantium tempore officia iure molestias itaque illum ipsa eaque nemo alias tempora ullam eum quibusdam? Nihil facilis quis asperiores sed praesentium tempore, fugit doloremque recusandae repellat cum totam molestiae ducimus placeat non a omnis excepturi sint, error quos, id suscipit. Aspernatur delectus aliquid nulla in similique repellendus eum, natus libero quod eaque fuga dolor repellat excepturi?</p>
+					</article>
+					<article>
+						<h1>Accusamus cupiditate reiciendis fugiat enim.</h1>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quidem exercitationem praesentium est provident, amet magnam pariatur nisi neque. Ut, maxime doloribus ipsa excepturi architecto. Illo, iusto veritatis quisquam numquam velit voluptate repellendus temporibus distinctio mollitia consequatur. Tenetur ducimus eaque nam enim rerum reprehenderit vitae est dignissimos, esse architecto totam aperiam explicabo nesciunt labore dolor suscipit hic magni. Officia commodi, porro minima facilis quo repellendus delectus beatae dolor modi aut hic aliquid molestias totam odit ipsam saepe odio, doloribus sunt tenetur et dolorum est! Blanditiis accusamus, minus! Consequuntur vitae natus itaque fuga doloribus. Dignissimos ipsam architecto deleniti, aspernatur, distinctio deserunt.</p>
+						<br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat magnam tenetur eligendi natus laudantium illum amet, qui placeat voluptatibus distinctio, saepe blanditiis reprehenderit adipisci libero. Possimus quisquam quidem, quaerat molestiae aut nulla qui consequuntur, dolorem quis saepe illum, aperiam incidunt dolore debitis rerum quo. Natus facilis, enim minima vel ipsam commodi tenetur dicta voluptatibus ratione quis! Doloribus ab nulla voluptatibus iusto, odio cumque quaerat delectus adipisci enim asperiores non voluptates magni eligendi vel culpa nemo incidunt! Beatae laborum voluptates ipsam ducimus quae, assumenda labore. Sint ipsam corporis nobis quidem odit eum, molestiae dolore excepturi cum, suscipit sunt, at sapiente quis.</p>
+					</article>
+					<article>
+						<h1>Provident quos illum, sapiente facere.</h1>
+						<hr>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo unde asperiores adipisci doloremque voluptas sint mollitia corrupti, magnam quis esse eius blanditiis, molestiae ipsam earum architecto at minus vitae laudantium facere sed reiciendis minima nihil amet eos. Id illo dolorum illum nostrum obcaecati, quam officiis qui quo vitae odio sapiente inventore alias voluptate, nesciunt atque harum quidem autem tempore rerum perferendis corrupti. Ea, cumque debitis repellat porro doloremque eius harum, dicta ipsa a, molestiae quia explicabo error labore laudantium perspiciatis. Mollitia corporis vel sunt illo ipsum maiores consequatur commodi incidunt, magni! Voluptatibus voluptatem similique, voluptates est perspiciatis consequatur vitae sequi.</p>
+						<br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis molestiae blanditiis necessitatibus repellendus praesentium aliquam accusantium voluptatum cum qui tenetur assumenda ullam, est error nihil maxime harum dolorem aut? Sint modi commodi molestiae natus ut. Commodi blanditiis odit amet ut voluptates facilis beatae temporibus nostrum earum, velit est, voluptas optio dicta dignissimos vel, sint quis. Magni, architecto minima rem iste aspernatur quisquam quam illum saepe, voluptate consequatur eum soluta, vero nisi, nostrum eos! In tempore illo sed repudiandae fugiat perferendis quasi officiis vitae omnis expedita, debitis harum necessitatibus magni laboriosam quis alias, est aspernatur ullam. Eveniet odio a possimus ea.</p>
+					</article>
+				</div>
+			</div>
+		</div>
+		<footer id="main_footer">
+			<h3>Lorem ipsum dolor sit amet.</h3>
+			<address>Website Layout Basic</address>
+		</footer>
+	
+</body>
+</html>

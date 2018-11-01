@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float layer</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a:link,a:visited{color:#000;}
+		a{text-decoration:none;}
+		body{font:12px/1.5 "굴림",Gulim;margin:10px;}
+
+		#container{width:1000px;background:#fdf;/*overflow:hidden;*/margin:0 auto;}
+		#container:after{content:"";display:block;clear:both;}
+		.menu{width:200px;padding:10px;float:left;}
+		.content{width:700px;padding:10px;border-left:1px solid #ccc;float:right;}
+		.active{font-size:16px;font-weight:bold;color:deeppink !important;}
+
+	</style>
+</head>
+<body>
+	<!-- div>#container>(div.menu>ul>li*3>a[href=""]>{menu$})+(div.content>p>lorem20)^div.footer>address>{&copy;2018 Copyright All right reserved.} -->
+	<div>
+		<div id="container">
+			<div class="menu">
+				<ul>
+					<li><a href="menu1.html" class="active">회사소개</a></li>
+					<li><a href="menu2.html">제품안내</a></li>
+					<li><a href="menu3.html">커뮤니티</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aspernatur porro ad, ex, ducimus quis praesentium, rem harum explicabo voluptate sunt est laboriosam natus aliquid minus eos ipsum nemo minima. Quod natus error, quisquam nobis ducimus, tempora officia dolores non nulla, labore voluptatibus laudantium est perferendis. Modi ad temporibus nemo cupiditate, cumque molestias harum possimus veniam consectetur vel veritatis inventore est, ratione, iusto atque voluptatem obcaecati accusamus placeat quod beatae in fugiat minus. Quas, temporibus, pariatur. Nostrum, aliquam. Voluptatem fugit, molestiae tempore? Est eveniet, delectus ea ratione magni quis aliquid suscipit nemo nostrum voluptates ducimus quod provident autem dolores distinctio, eaque totam ab veritatis enim quae itaque saepe nisi vel. Nulla, labore. Facilis eos, amet, sint dolore eaque nemo nesciunt repudiandae delectus dolor, omnis quae quas! Autem, temporibus, libero. Beatae placeat nesciunt maiores, porro officiis quibusdam dolorum delectus sunt harum aut soluta eos molestiae aspernatur provident non eligendi, ullam quidem aliquid obcaecati sequi velit atque in! Asperiores cum provident, unde neque quos nemo atque obcaecati fugiat blanditiis eligendi, reprehenderit labore soluta iste amet accusantium necessitatibus ad odit. Necessitatibus odit pariatur saepe ad voluptates ipsum ducimus? Delectus, quos molestiae! Aut velit incidunt fugiat accusantium laudantium aperiam, deserunt cupiditate blanditiis officiis perspiciatis.</p>
+			</div>
+		</div>
+		<div class="footer">
+			<address>&copy;2018 Copyright All right reserved.</address>
+		</div>
+	</div>
+</body>
+</html>

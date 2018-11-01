@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>fullpage</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<link rel="stylesheet" href="./css/fullpage.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/jquery.fullPage.js"></script>
+	<style>
+		#fullpage{width:100%;height:100%;}
+		#page1{background-image:url(../images/bg1.jpg);}
+		#page2{background-image:url(../images/bg2.jpg);}
+		#page3{background-image:url(../images/bg3.jpg);}
+		#page4{background-image:url(../images/bg4.jpg);}
+		.pages{width:100%;height:100%;
+			background-repeat:no-repeat;
+			background-position:center top;
+			background-size:cover;}
+		#navTop{width:100%;height:50px;background:aliceblue;position:fixed;z-index:1;}
+		#navTop>ul{margin-left:20px;}
+		#navTop>ul:after{content:"";display:block;clear:both;}
+		#navTop>ul>li{float:left;}
+		#navTop>ul>li>a{display:block;line-height:50px;text-align:center;padding:0 10px;}
+		#navTop>ul>li.active{background:powderblue;font-weight:bold;border-radius:10px;}
+		#navTop>ul>li.active>a{color:blue;}
+		.main_cmt{width:400px;margin-left:100px;}
+		.main_cmt p{text-shadow:1px 1px 1px #292929;color:white;font-weight:bold;}
+		.main_cmt p:nth-child(1){font-size:4em;}
+		.main_cmt p:nth-child(2){font-size:2em;}
+		.main_cmt a{display:block;width:150px;border:2px solid #fff;background:none;line-height:40px;text-align:center;margin-top:30px;color:#fff;border-radius:20px;}
+		.main_cmt a:hover{background:aliceblue;color:#696969;font-weight:bold;transition:0.3s;}
+		
+		#page2 div.onview{opacity:0;transition:.3s;}
+		#page2 div.onview.mactive{opacity:1;transform:translateX(100px);}
+		#page3 div .pooh{position:absolute;opacity:0;right:0;width:200px;}
+
+		#page3,#page4{padding:15px 0 11px calc(50% - 50px);}
+
+		#fp-nav{right:0;}
+		#fp-nav ul li a span{background:#3f51b5;}
+	</style>
+	<script>
+		$(function(){
+			$("#fullpage").fullpage({
+				anchors:["1st","2st","3st","4st"],
+				navigation: true,
+                slidesNavigation: true,
+				menu:"#topMenu",
+				'afterLoad':function(anchorsLink,index){
+					if(index==2){
+						$(".onview").addClass("mactive");
+					}else{$(".onview").removeClass("mactive");
+					}
+					if(index==3){
+						$(".pooh").stop().animate({opacity:1,right:100});
+					}else{$(".pooh").
+					stop().animate({opacity:0,right:0})}
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav id="navTop">
+		<ul id="topMenu">
+			<li data-menuanchor="1st"><a href="#1st">MENU1</a></li>
+			<li data-menuanchor="2st"><a href="#2st">MENU2</a></li>
+			<li data-menuanchor="3st"><a href="#3st">MENU3</a></li>
+			<li data-menuanchor="4st"><a href="#4st">MENU4</a></li>
+		</ul>
+	</nav>
+	<div id="fullpage">
+		<div class="section pages" id="page1" data-anchor="1st">
+			<div class="main_cmt">
+				<p>Lorem ipsum.</p>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a>
+			</div>
+		</div>
+		<div class="section pages" id="page2" data-anchor="2st">
+			<div class="onview">
+				<div class="main_cmt">
+					<p>Lorem ipsum.</p>
+					<p>Lorem ipsum dolor sit.</p>
+					<a href="#">more</a>
+				</div>
+			</div>
+		</div>
+		<div class="section pages" id="page3" data-anchor="3st">
+			<div class="main_cmt">
+				<p>Lorem ipsum.</p>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a>
+				<img src="../images/pooh.png" alt="pooh" class="pooh">
+			</div>
+		</div>
+		<div class="section pages" id="page4" data-anchor="4st">
+			<div class="slide">
+				<div class="main_cmt">
+					<p>Lorem ipsum.</p>
+					<p>Lorem ipsum dolor sit.</p>
+					<a href="#">more</a>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="main_cmt">
+					<p>Lorem ipsum.</p>
+					<p>Lorem ipsum dolor sit.</p>
+					<a href="#">more</a>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="main_cmt">
+					<p>Lorem ipsum.</p>
+					<p>Lorem ipsum dolor sit.</p>
+					<a href="#">more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

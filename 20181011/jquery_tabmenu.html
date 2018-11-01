@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>tabmenu03</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		#container{width:770px;height:35px;margin:10px auto;background:#2c2d31;position:relative;}
+		#container:after{content:"";display:block;clear:both;}
+		#container h1{float:left;}
+		#container ul.tab{float:left;}
+		  ul.tab:after{content:"";display:block;clear:both;}
+		  ul.tab>li{float:left;}
+		  ul.tab>li>a{display:block;width:80px;line-height:35px;color:#fff;font-weight:bold;text-align:center;}
+		  ul.tab>li.select{background:#fff;}
+		  ul.tab>li.select a{color:#2c2d31;}
+
+		  #container>div{float:left;width:770px;}
+		  #container>div>ul:after{content:"";display:block;clear:both;}
+		  #container>div>ul>li{float:left;width:114px;}
+
+		  .close{position:absolute;top:40px;right:10px;width:20px;}
+
+	</style>
+	<script>
+		$(function(){
+			var $i = 0;
+			$("#container div").hide();
+			$("#container div").eq(0).show();
+			$("ul.tab li").eq(0).addClass("select");
+
+			$("ul.tab li").click(function(){
+				$i = $(this).index();
+				$("#container div").hide().eq($i).show();
+				$("ul.tab li").removeClass();
+				$(this).addClass("select");
+				$("span.close").show();
+			});
+			
+			$("span.close").click(function(){
+				$(this).hide();
+				$("#container div").hide();
+				$("ul.tab li").removeClass();
+
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<h1><img src="../images/tab_logo.jpg" alt="logo"></h1>
+		<ul class="tab">
+			<li><a href="#" class="select">승용</a></li>
+			<li><a href="#">견적</a></li>
+			<li><a href="#">상담</a></li>
+			<li><a href="#">이벤트</a></li>
+		</ul>
+		<span class="close"><a href="#"><img src="../images/x.jpg" alt="x"></a></span>
+		<div>
+			<ul>
+				<li><a href="#"><img src="../images/car1_01.gif" alt="car1"></a></li>
+				<li><a href="#"><img src="../images/car1_02.gif" alt="car2"></a></li>
+				<li><a href="#"><img src="../images/car1_03.gif" alt="car3"></a></li>
+				<li><a href="#"><img src="../images/car1_04.gif" alt="car4"></a></li>
+				<li><a href="#"><img src="../images/car1_05.gif" alt="car5"></a></li>
+				<li><a href="#"><img src="../images/car1_06.gif" alt="car6"></a></li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li><a href="#"><img src="../images/estimate_01.gif" alt="price1"></a></li>
+				<li><a href="#"><img src="../images/estimate_02.gif" alt="price2"></a></li>
+				<li><a href="#"><img src="../images/estimate_03.gif" alt="price3"></a></li>
+				<li><a href="#"><img src="../images/estimate_04.gif" alt="price4"></a></li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li><a href="#"><img src="../images/consult_01.gif" alt="con1"></a></li>
+				<li><a href="#"><img src="../images/consult_02.gif" alt="con2"></a></li>
+				<li><a href="#"><img src="../images/consult_03.gif" alt="con3"></a></li>
+				<li><a href="#"><img src="../images/consult_04.gif" alt="con4"></a></li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li><a href="#"><img src="../images/event_01.gif" alt="event_01"></a></li>
+				<li><a href="#"><img src="../images/event_02.gif" alt="event_02"></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

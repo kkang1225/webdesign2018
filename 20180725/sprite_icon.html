@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{margin:0;padding:0;}
+		i{display:inline-block;
+			width:25px;height:25px;
+			background:url(./images/icon-sprite.png) no-repeat 0 0;
+			text-indent:-9999px;
+			margin-right:5px;}
+		div{margin:10px auto;width:100px;}
+		i.icon-join{background-position:-150px -80px;}
+		i.icon-email{background-position:-90px -80px;}
+		i.icon-phonenumber{background-position:-119px -80px;}
+		i.icon-home{background-position:-440px -180px;}
+		i.question{background-position:0 -250px;}
+		i.answer{background-position:-30px -250px;}
+		i.good{background-position:-274px -150px;}
+		i:hover{cursor:pointer;}
+		div>a:hover>i{background-position:-90px -80px;}
+		i.icon-home:hover{background-position:-98px 0}
+		i.good:hover{background-position:-373px -150px}
+	</style>
+</head>
+<body>
+	<div><a href="#">
+		<i class="icon-join">회원가입</i>회원가입
+	</a></div>
+	<div>
+		<i class="icon-email">이메일</i>이메일
+	</div>
+	<div>
+		<i class="icon-phonenumber">전화번호</i>전화번호
+	</div>
+	<div>
+		<i class="question">문의</i>문의
+	</div>
+	<div>
+		<i class="answer">답변</i>답변
+	</div>
+	<div><i class="good">좋아요</i>좋아요
+	</div>
+	<div>
+		<i class="icon-home">홈</i>홈
+	</div>
+</body>
+</html>

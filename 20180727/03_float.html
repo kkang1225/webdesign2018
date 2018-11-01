@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+	<style>
+		*{margin:0;padding:0;}
+		html,body{font-family: 'Source Code Pro', monospace;}
+		a{text-decoration:none;}
+		a:link{color:black;}
+		ul,li{list-style:none;}
+
+		#nav_wrap{position:absolute;bottom:0;width:100%;}
+		#nav{overflow:hidden;width:100%;}
+		#nav li{float:left;background:navy;width:14.2857143625%;}
+		#nav a{display:block;/*width:100px;*/height:40px;text-align:center;line-height:40px;}
+		#nav a:link{color:white;}
+		#nav a:hover{background:deeppink;color:black;}
+
+		#header{width:1000px;height:140px;margin:0 auto;background:lime;position:relative;}
+		#header>h1{width:200px;height:60px;background:yellow;text-align:center;line-height:60px;position:absolute;left:10;top:10px;}		
+		
+		#util_menu{position:absolute;right:10px;top:10px;}
+		#util_menu>ul{overflow:hidden;}
+		#util_menu>ul>li{float:left;background:green;border-right:1px solid black;}
+		#util_menu>ul>li:last-child{border-right: none;}
+		#util_menu>ul>li>a{display:block;width:100px;height:30px;text-align:center;line-height:30px;}
+		#util_menu>ul>li>a:hover{font-weight:bold;}
+
+		
+	</style>
+</head>
+<body>
+	
+
+	<div id="header">
+		<h1>LOGO</h1>
+		<div id="util_menu">
+			<ul>
+				<li><a href="#">홈으로</a></li>
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">사이트맵</a></li>
+			</ul>
+		</div>
+		<div id="nav_wrap">
+			<ul id="nav">
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+				<li><a href="#">MENU6</a></li>
+				<li><a href="#">MENU7</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

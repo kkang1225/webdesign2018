@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		ul{overflow:hidden;} /*-float를 해제*/
+		li{list-style:none;
+			float:left; /*float 해제 clear:both;*/padding:15px;}
+			/*border:1px solid #000000}*/
+		li:first-child{border-radius:10px 0 0 10px;}
+		li:last-child{border-radius:0 10px 10px 0;}
+		li:nth-child(2n){background-color:skyblue;}
+		li:nth-child(2n+1){background-color:red;} 
+	</style>
+</head>
+<body>
+	<ul>
+		<li>menu01</li>
+		<li>menu02</li>
+		<li>menu03</li>
+		<li>menu04</li>
+		<li>menu05</li>
+		<li>menu06</li>
+		<li>menu07</li>
+	</ul>
+</body>
+</html>

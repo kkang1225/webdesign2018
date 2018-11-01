@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		#open{width:300px;height:100px;margin:50px;}
+	</style>
+	<script>
+		$(function(){
+			var $open = $("#open");
+			$open.click(function(){
+				window.open("jquery_mouse_event.html","newWindow","width=200,height=200");
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="open">윈도우오픈</button>
+</body>
+</html>

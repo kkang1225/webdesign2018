@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		/**{margin:0;padding:0;}*/
+		body{font:12px/1.5 "굴림",Gulim; margin:10px;}
+		li{list-style:none;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:black;}
+
+		#gnb{width:525px;height:50px;padding-left:5px;background:#ddf;}
+		#gnb li{display:inline;}
+		#gnb li a{float:left;width:100px;height:40px;text-align:center;border-top:7px solid #77f;margin-right:5px;background:#ccf;color:#666;}
+		#gnb li a:hover{background:#eef;color:#000;}
+		#gnb li a span{display:block;}
+	</style>
+</head>
+<body>
+	<ul id="gnb">
+		<li><a href="#">회사소개<span>COMPANY</span></a></li>
+		<li><a href="#">제품안내<span>PRODUCT</span></a></li>
+		<li><a href="#">고객지원<span>CUSTOMER</span></a></li>
+		<li><a href="#">재용정보<span>RECRUIT</span></a></li>
+		<li><a href="#">커뮤니티<span>COMMUNITY</span></a></li>
+	</ul>
+	<style>
+		*{margin:0;padding:0;}
+		.bbs{width:260px;border:2px solid #ccc;background:#ffefee;padding:10px;position:relative;}
+		.bbs dt{padding-bottom:10px;color:#080;font:bold 120%;}
+		.bbs dt dd{padding-left:10px;color:#666;}
+		.bbs dd a:hover{text-decoration:underline;color:#00f !important;}
+		.bbs p{position:absolute;right:10px;top:10px;}
+	</style>
+	<div class="bbs">
+		<dl>
+			<dt>동물병원 24시</dt>
+			<dd><a href="#">밥 먹이는 시간 지킬 것</a></dd>
+			<dd><a href="#">길고양이 주사 맞히기</a></dd>
+			<dd><a href="#">눈 아픈 동물 목에 깔때기 씌우기</a></dd>
+			<dd><a href="#">매일 목욕 시킬 것</a></dd>
+			<dd><a href="#">이름없는 애들 이름 짓지 말기</a></dd>
+		</dl>
+		<p class="more"><a href="#">더보기</a></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+</head>
+<body>
+	<p>아이디/비밀번호입력</p>
+	<script>
+		var id,pw;
+		id=prompt("아이디를 입력하세요.");
+		if(id=="admin"){
+			pw=prompt("비밀번호를 입력하세요.");
+
+			if(pw=="1234"){
+				location.href="login.html";
+			}else{
+				location.href="error.html";
+
+			}
+		}else{
+			location.href="error.html";
+		}
+	</script>
+</body>
+</html>

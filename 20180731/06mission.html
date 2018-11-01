@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:purple;}
+
+		#container{width:1000px;background:gray;margin:0 auto;position:relative;top:20px;}
+		ul{overflow:hidden;}
+		li{float:left;background:#cdcdcd;width:200px;}
+		li a{display:block;height:20px;padding:10px;text-align:center;line-height:20px;font-size:17px;font-weight:bold;}
+		li a:hover{background:#fff;}
+		.view{width:100px;height:100px;padding:50px;font-size:20px;}
+		.view1{width:1000px;height:200px;display:none;background:skyblue;}
+		.view2{width:1000px;height:200px;display:none;background:skyblue;}
+		.view3{width:1000px;height:200px;display:none;background:skyblue;}
+		.view4{width:1000px;height:200px;display:none;background:skyblue;}
+		.view5{width:1000px;height:200px;display:none;background:skyblue;}
+		li a:hover+.view1{display:block;position:absolute;}
+		li a:hover+.view2{display:block;position:absolute;left:0;right:0;}
+		li a:hover+.view3{display:block;position:absolute;left:0;right:0;}
+		li a:hover+.view4{display:block;position:absolute;left:0;right:0;}
+		li a:hover+.view5{display:block;position:absolute;right:0;}
+		.view1{display:none;}
+		.view2{display:none;}
+		.view3{display:none;}
+		.view4{display:none;}
+		.view5{display:none;}
+
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<ul>
+			<li><a href="#">menu1</a>
+				<div class="view1">1.Lorem ipsum dolor sit amet.</div>
+			</li>
+			<li><a href="#">menu2</a>
+				<div class="view2">2.Lorem ipsum dolor sit amet.</div>
+			</li>
+			<li><a href="#">menu3</a>
+				<div class="view3">3.Lorem ipsum dolor sit amet.</div>
+			</li>
+			<li><a href="#">menu4</a>
+				<div class="view4">4.Lorem ipsum dolor sit amet.</div>
+			</li>
+			<li><a href="#">menu5</a>
+				<div class="view5">5.Lorem ipsum dolor sit amet.</div>
+			</li>
+		</ul>
+		<div class="view">안녕하세요</div>
+	</div>
+</body>
+</html>

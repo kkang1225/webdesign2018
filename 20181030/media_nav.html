@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		body{background:url(../images/windmill.jpg) no-repeat right bottom fixed;background-size:cover;}
+		a:link,a:hover,a:visited{color:#fff;}
+		
+		nav{width:100%;background:rgba(52,73,94,0.5);}
+		nav ul{display:none;}
+		nav ul li{border-bottom:1px solid #576979;}
+		nav ul li a{display:block;width:100%;text-align:center;line-height:35px;font-weight:bold;}
+		nav a#trigger{display:block;line-height:35px;width:100%;padding-left:40px;position:relative;}
+		nav a#trigger:after{content:"";position:absolute;width:30px;height:30px;background:url(../images/nav.png)no-repeat;right:15px;top:10px;}
+
+		@media screen and (min-width:721px){
+		nav{height:40px;}
+		
+		nav ul{width:720px;height:40px;margin:0 auto;display:block;}
+		nav ul:after{content:"";display:block;clear:both;}
+		nav ul li{float:left;width:120px;border-right:1px solid #576979;border-bottom:none;}
+		nav ul li:last-child{border-right:none;}
+		nav ul li a{display:block;width:100%;text-align:center;line-height:35px;font-weight:bold;}
+		nav a#trigger{display:none;}
+		}
+	</style>
+	<script>
+		$(function(){
+			$("#trigger").click(function(e){
+				e.preventDefault();
+				$("nav ul").slideToggle();
+			});
+
+			$(window).resize(function(){
+				var winWidth = $(window).width();
+				if(winWidth>320){
+					$("nav ul").removeAttr("style");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav>
+		<a href="#" id="trigger">MENU</a>
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+			<li><a href="#">menu6</a></li>
+		</ul>
+		
+	</nav>
+</body>
+</html>

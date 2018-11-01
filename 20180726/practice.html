@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{margin:0;padding:0;}
+		body{background:url(../bg_grid.gif);}
+		div#wrap{width:1000px;height:150px;background:lightgray;margin:0 auto;position:relative;top:100px;}
+		div.box01,div.box02,div.box03{position:absolute;text-align:center;}
+		div.box01{background:red;width:300px;height:30px;left:300px;line-height:30px;}
+		div.box02{background:blue;width:240px;height:50px;left:10px;top:70px;line-height:30px;}
+		div.box03{background:green;width:150px;height:50px;top:100px;line-height:50px;}
+
+		ul,li{list-style:none;}
+		a:link,visited{color:black;}
+		ul{overflow:hidden;margin:0 auto;width:980px;position:relative;top:-150px;}
+		ul>li{float:left;background:url(./sprites.png) no-repeat;}
+		ul>li>a{display:block;text-indent:-9999px;width:140px;height:50px;}
+
+		li.menu01{background-position:0 0;}
+		li.menu01:hover{background-position:0 -50px;transition-duration:.3s;}
+		li.menu02{background-position:-140px 0;}
+		li.menu02:hover{background-position:-140px -50px;transition-duration:.3s;}
+		li.menu03{background-position:-280px 0;}
+		li.menu03:hover{background-position:-280px -50px;transition-duration:.3s;}
+		li.menu04{background-position:-420px 0;}
+		li.menu04:hover{background-position:-420px -50px;transition-duration:.3s;}
+		li.menu05{background-position:-560px 0;}
+		li.menu05:hover{background-position:-560px -50px;transition-duration:.3s;}
+		li.menu06{background-position:-700px 0;}
+		li.menu06:hover{background-position:-700px -50px;transition-duration:.3s;}
+		li.menu07{background-position:-840px 0;}
+		li.menu07:hover{background-position:-840px -50px;transition-duration:.3s;}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="box01"><h1>HARRYPOTTER</h1></div>
+		<div class="box02"></div>
+		<div class="box03"></div>
+		<div class="box03"></div>
+		<div class="box03">menu</div>
+	</div>
+
+	<ul>
+		<li class="menu01"><a href="#">MENU01</a></li>
+		<li class="menu02"><a href="#">MENU02</a></li>
+		<li class="menu03"><a href="#">MENU03</a></li>
+		<li class="menu04"><a href="#">MENU04</a></li>
+		<li class="menu05"><a href="#">MENU05</a></li>
+		<li class="menu06"><a href="#">MENU06</a></li>
+		<li class="menu07"><a href="#">MENU07</a></li>
+	</ul>
+</body>
+</html>

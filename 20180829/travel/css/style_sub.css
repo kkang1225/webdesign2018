@@ -1,0 +1,101 @@
+@charset "utf-8";
+body{background:#efefef;}
+.clearfix:after{content:"";display:block;clear:both;}
+/*header_start*/
+#header_wrap{width:100%;background:url(../images/04비행기.jpg) no-repeat;
+	background-size:cover;}
+.header{width:980px;height:90px;margin:0 auto;;padding-top:15px;position:relative;}
+.header .logo a{font-size:30px;color:#fff;}
+.header h3{font-weight:normal;font-size:16px;margin-left:40px;}
+.header h3 a{color:#fff;letter-spacing:5px;}
+.header img{width:37px;height:33px;float:left;}
+
+.header form{width:300px;position:absolute;top:30px;left:240px;}
+.header .sch_input{width:100%;height:30px;border:0;border-radius:20px;
+	padding:0 40px 0 20px;font-weight:bold;}
+.header .sch_btn{width:30px;height:30px;position:absolute;right:0;top:0;border:0;
+	background:none;padding:0 30px;cursor:pointer;}
+.header .tel{font-weight:normal;font-size:23px;color:#fff;position:absolute;
+	top:30px;right:180px;line-height:23px;padding:0 20px;text-align:center;}
+.header ul{position:absolute;top:27px;right:0;}
+.header li{float:left;}
+.header li a{display:block;padding:3px;}
+/*header_end*/
+
+/*gnb_start*/
+#gnb{width:100%;background:#fff;height:60px;}
+#gnb .main_gnb{width:980px;height:60px;margin:0 auto;}
+.gnb{position:relative;}
+.gnb li{float:left;border-left:2px solid #ebebeb;}
+.gnb li:last-child{border-right:2px solid #ebebeb;}
+.gnb i{color:#f84816;position:absolute;top:10px;}
+.gnb a{display:block;width:161px;line-height:60px;text-align:center;}
+.gnb a:hover{font-weight:bold;color:#0866a3;}
+.active{color:#0866a3 !important;font-weight:bold;}
+
+#gnb .sub_gnb{width:100%;height:40px;background:#4f5867;position:relative;}
+.depth{width:980px;margin:0 auto;position:absolute;right:-90px;}
+.depth li{float:left;border:none;}
+.depth a{display:block;width:70px;text-align:center;line-height:40px;
+	color:#fff;font-size:14px;}
+.depth a:hover{font-weight:bold;}
+
+/*gnb_end*/
+
+
+/*container_start*/
+#container_wrapper{width:100%;_height:280px;background:url(../images/ocean.jpg) no-repeat;}
+.text{width:500px;height:120px;margin:0px auto;}
+#container_wrapper h2{color:#fff;font-size:50px;text-align:center;text-decoration:underline;
+padding-top:80px;font-size:67px;letter-spacing:-2px;}
+.text p{float:left;color:#fff;font-weight:bold;text-align:center;font-size:17px;margin-left:70px;}
+.text p:last-child{font-weight:normal;margin-left:10px;}
+
+
+.container_wrap{width:100%;margin:0 auto;}
+.container{width:980px;height:920px;margin:0 auto;margin-top:95px;background:#fff;padding-top:65px;border-bottom:2px solid #0054a6;}
+.content{width:890px;height:800px;margin:0 auto;background:url(../images/부자.jpg) no-repeat 480px 5px;}
+.content .require{float:left;font-size:23px;color:#7e7e7e;font-weight:bold;}
+.content .tab{float:right;}
+.content .tab li{float:left;}
+.content .tab a{fonat-size:10px;font-weight:bold;color:#7e7e7e;}
+.content .tab li:last-child a{color:#006599;text-decoration:underline;}
+
+.content .text01{float:left;font-size:27px;}
+.content .text01 h3:last-child{color:#006599;}
+
+.content .text02{float:left;}
+.content .text02 p:first-child{color:#e94e1e;text-decoration:underline;font-size:17px;font-weight:bold;
+margin-top:40px;}
+.content .text02 p:last-child{font-size:15px;color:#7e7e7e;margin-top:20px;text-align:left;}
+
+.content .info{width:480px;float:left;border-top:2px solid #0054a6;margin-top:40px;border-bottom:2px solid #d7d7d7;}
+.info .title{float:left;}
+.info .title li{width:279%;height:30px;line-height:30px;background:#fbfcfe;border-bottom:2px solid #d7d7d7;padding-right:40px;padding-left:20px;
+font-weight:bold;}
+.info .title li:last-child,.info .information li:last-child{border:none;}
+.info .information{float:left;background:#fff !important;}
+.info .information li{height:30px;line-height:30px;border-bottom:2px solid #d7d7d7;color:#999999;font-weight:bold;}
+
+.card_wrap{width:980px;margin:0 auto;float:left;margin-top:40px;}
+.card{width:200px;height:210px;float:left;margin-left:20px;}
+.card:first-child{margin-left:15px;}
+
+
+
+
+
+
+
+
+
+
+/*footer_start*/
+footer{width:980px;height:120px;margin:0 auto;}
+#footer ul{margin:20px 0;}
+#footer li{float:left;}
+#footer a{padding-right:20px;font-weight:bold;}
+#footer p{color:#777777;}
+
+.bottom p{float:left;font-weight:bold;}
+.copyright{font-weight:bold;}

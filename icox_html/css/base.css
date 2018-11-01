@@ -1,0 +1,10 @@
+@charset "utf-8";
+a{text-decoration:none;color:#999;}
+a:hover{color:#666;}
+
+address,strong{font-style:normal;font-weight:normal;}
+
+@font-face{font-family:NGothic;src:url('../font/NanumGothic.woff') format('woff');}
+@font-face{font-family:NGothicEB;src:url('../font/NanumGothicExtraBold.woff') format('woff');}
+
+body{font:14px "NGothicEB",Gulim;}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>hansik festival</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		#header{width:100%;height:72px;background:#f3f5f8;min-width:1104px;}
+			#top_menu{width:1104px;height:62px;margin:0 auto;padding:0 15px;}
+			#top_menu:after{content:"";display:block;clear:both;}
+			#top_menu>a{float:left;display:block;}
+			#top_menu>a>i{font-size:30px;padding-right:10px;line-height:70px;color:#969595;}
+			#top_menu>ul{float:right;}
+			#top_menu>ul:after{content:"";display:block;clear:both;}
+			#top_menu>ul>li{float:left;}
+			#top_menu>ul>li>a{display:block;width:100%;line-height:70px;padding:0 40px;color:#969595;font-size:15px;}
+			#top_menu>ul>li>a:last-child{padding-right:0;}
+
+			#gnb_wrap{width:100%;height:105px;background:#fff;}
+			#gnb{width:1066px;height:105px;margin:8px auto;}
+			#gnb:after{content:"";display:block;clear:both;}
+			#gnb>h2{width:160px;height:100px;float:left;background:url(../images/logo01.png) no-repeat 0 23px;background-size:160px 60px;text-indent:-9999px;}
+			#gnb>ul{float:right;width:60%;}
+			#gnb>ul:after{content:"";display:block;clear:both;}
+			#gnb>ul>li{float:left;width:25%;}
+			#gnb>ul>li>a{display:block;line-height:100px;text-align:center;}
+
+			#gnb>ul>li>ul{background:#fff;position:relative;left:10px;margin-top:6px;padding:10px;}
+			#gnb>ul>li:nth-child(3)>ul{width:300px;position:relative;left:30px;}
+			#gnb>ul>li:nth-child(4)>ul{position:relative;left:30px;}
+			#gnb>ul>li>ul>li{padding-top:5px;padding-left:10px;}
+			
+			#gnb>ul>li>ul>li>a{display:block;font-size:15px;}
+
+			section{width:100%;margin:105px auto;background:url(../images/main_bg.jpg) no-repeat center 100%;min-width:1104px;}
+				#banner{width:1066px;height:461px;margin:0 auto;background:url(../images/main_img01-4.png) no-repeat center 50%;}
+				#banner>h2{width:100%;height:260px;background:url(../images/main_img03.png) no-repeat 0 50px;text-indent:-9999px;}
+				#contents{width:1066px;margin:0 auto;}
+				#contents>img{width:510px;height:40px;}
+	</style>
+	<script>
+		$(function(){
+			var menu = $("#gnb_wrap");
+			var menuTop = menu.offset().top;
+			var depth1 = $(".right>li");
+			var depth2 = $("#gnb>ul>li>ul");
+
+			$(window).scroll(function(){
+				var scrollY = window.pageYOffset;
+				console.log(scrollY);
+				if(scrollY>menuTop){
+					menu.css("position","fixed").css("top",0);}else{menu.css("position","relative")}
+			});
+
+			depth2.hide();
+			depth1.mouseenter(function(){
+				if($(this).index()==1){return false}
+				depth2.eq($(this).index()).slideDown();
+
+			}).mouseleave(function(){
+				depth2.stop().slideUp();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div id="top_menu">
+			<a href="#"><i class="fab fa-twitter-square"></i></a>
+			<a href="#"><i class="fab fa-facebook-square"></i></a>
+			<ul>
+				<li><a href="#">English</a></li>
+				<li><a href="#">Chinese</a></li>
+				<li><a href="#">Japanese</a></li>
+			</ul>
+		</div>
+		<div id="gnb_wrap">
+			<div id="gnb">
+				<h2 class="left">logo</h2>
+				<ul class="right">
+					<li>
+						<a href="#">월드 한식 페스티벌</a>
+						<ul>
+							<li><a href="#">인사말</a></li>
+							<li><a href="#">지난 축제 보기</a></li>
+							<li><a href="#">찾아오시는 길</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">일정 안내</a>
+						<ul>
+								<li>일정 안내</li>
+							</ul>	
+					</li>
+					<li>
+						<a href="#">프로그램</a>
+						<ul>
+							<li><a href="#">개막식</a></li>
+							<li><a href="#">장 명인과의 만남</a></li>
+							<li><a href="#">스타셰프와 함께하는 한식 쿠킹 쇼</a></li>
+							<li><a href="#">전시 프로그램</a></li>
+							<li><a href="#">공연</a></li>
+							<li><a href="#">공모전</a></li>
+							<li><a href="#">한식문화관 쿠킹 클래스</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">커뮤니티</a>
+						<ul>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">자유게시판</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<section>
+		<div id="banner">
+			<h2>banner_logo</h2>
+		</div>
+	</section>
+	<div id="contents">
+			<img src="../images/theme-1.png" alt="theme-1">
+			<div class="plan">행사일정</div>
+			<div class="info">찾아오시는 길</div>
+			<div class="show">스타 셰프와 함께하는 한식 쿠킹쇼</div>
+		</div>
+</body>
+</html>

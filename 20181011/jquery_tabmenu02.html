@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>tabmenu02</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			$("#container div").hide();
+			$("#container div").eq(0).show();
+			$("ul.tab li:eq(0)").addClass("select");
+
+			$("ul.tab li").click(function(){
+				
+				$("ul.tab li, ul.tab a").removeClass();
+				$(this).addClass("select");
+				$("#container div").hide();
+				$("ul.tab a").css("color","#00f");
+				$("ul.tab a").eq($(this).index()).css("color","#000");
+				$("ul.tab li").css("border-bottom","2px solid skyblue");
+				$("ul.tab li").eq($(this).index()).css("border-bottom","none");
+				$("#container div").eq($(this).index()).show();
+				
+			});
+		});
+	</script>
+	<style>
+	*{padding:0;margin:0;}
+	a:link{text-decoration:none;}
+	a:visited{color:#00f;}
+		#container{width:600px;margin:50px auto;border:2px solid skyblue;}
+		ul.tab{list-style:none;}
+		ul.tab:after{content:"";display:block;clear:both;}
+		ul.tab>li{float:left;background:aliceblue;border-right:2px solid skyblue;border-bottom:2px solid skyblue;}
+		ul.tab>li:last-child{border-right:none;}
+		ul.tab>li.select{font-weight:bold;background:lightblue;border-bottom:none;}
+		ul.tab>li>a{display:block;width:108.5px;text-align:center;padding:20px;}
+		ul.tab>li>a.select{color:#000;}
+
+		#container div{padding:20px;padding-left:40px;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<ul class="tab">
+			<li><a href="#" class="select">뉴스 줌</a></li>
+			<li><a href="#">사회</a></li>
+			<li><a href="#">경제</a></li>
+			<li><a href="#">IT</a></li>
+		</ul>
+		<div>
+			<ul>
+				<li>1Lorem ipsum dolor sit amet.</li>
+				<li>Facere architecto ipsam laborum, cumque.</li>
+				<li>Esse assumenda quae fugit magni.</li>
+				<li>Inventore ipsa a alias numquam?</li>
+				<li>Molestias, dicta repellendus quisquam animi!</li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li>2Lorem ipsum dolor sit amet.</li>
+				<li>Facere architecto ipsam laborum, cumque.</li>
+				<li>Esse assumenda quae fugit magni.</li>
+				<li>Inventore ipsa a alias numquam?</li>
+				<li>Molestias, dicta repellendus quisquam animi!</li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li>3Lorem ipsum dolor sit amet.</li>
+				<li>Facere architecto ipsam laborum, cumque.</li>
+				<li>Esse assumenda quae fugit magni.</li>
+				<li>Inventore ipsa a alias numquam?</li>
+				<li>Molestias, dicta repellendus quisquam animi!</li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li>4Lorem ipsum dolor sit amet.</li>
+				<li>Facere architecto ipsam laborum, cumque.</li>
+				<li>Esse assumenda quae fugit magni.</li>
+				<li>Inventore ipsa a alias numquam?</li>
+				<li>Molestias, dicta repellendus quisquam animi!</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">			
+	<title>문서 제목</title>
+	<style>
+	#box{margin:0 auto;background:blue;}
+	body{color:#fff;font-weight:bold;}
+		@media screen and (max-width:575px){body{background:skyblue;}#box{width:95%;}
+		}/*575px(mobile ver.)*/
+		@media screen and (min-width:576px) and (max-width:768px){body{background:red;}#box{width:90%;}
+		}/*576~768(tablet ver.)*/
+		@media screen and (min-width:769px){body{background:orange;}#box{width:1000px;}
+	}/*769px~(pc ver.)*/
+	</style>
+</head>
+<body>
+	<div id="box">
+		<h1>Lorem ipsum.</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, nihil!</p>
+		<p>Ea quibusdam quis maxime, repellat perspiciatis consequatur nostrum eius distinctio.</p>
+	</div>
+</body>
+</html>

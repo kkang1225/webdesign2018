@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>jquery_animate01</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<style>
+		img{width:240px;position:relative;}
+	/*	#target{width:240px;height:120px;}*/
+	</style>
+	<script>
+		$(function(){
+			var $car = $("#img");
+			
+			// $car.css("opacity",0);
+
+			// $("#show").on("click",function(){
+			// 	$car.show(1000,"easeInBounce",function(){
+			// 		alert("완료");
+			// 	});
+			// });
+			// $("#hide").on("click",function(){
+			// 	$car.hide(1000,"easeInBounce",function(){  //callback함수
+			// 		$("#info").html("안녕하세요");
+			// 	});
+			// });
+
+			// $("#show").on("click",function(){
+			// 	$car.slideDown(1000);
+			// 	});
+			// $("#hide").on("click",function(){
+			// 	$car.slideUp(1000);
+			// 	});
+
+			// $("#show").on("click",function(){
+			// 	$car.fadeIn(1000);
+			// 	});
+			// $("#hide").on("click",function(){
+			// 	$car.fadeOut(1000);
+			// 	});
+
+			// $("#show").click(function(){
+			// 	$car.animate({opacity:1},3000,"easeInQuint",function(){
+			// 		$("#info").html("에니메이션 완료!");
+			// 	});
+			// });
+
+			$("#show").click(function(){
+				// $car.stop().animate({left:300,width:340},3000).animate({left:0});
+				$car.stop().animate({left:"+=100"});
+			});
+			$("#hide").click(function(){
+				// $car.stop().animate({left:0,width:240},1000);
+				$car.stop().animate({left:"-=100"});
+			});
+		});
+	</script>
+</head>
+<body>
+	<img src="../images/car.png" alt="car01" id="img">
+	<div id="target">
+		
+	</div>
+	<button id="show">show</button>
+	<button id="hide">hide</button>
+	<div id="info">show</div>
+</body>
+</html>

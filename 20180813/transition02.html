@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>transition_fade</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		.container{width:400px;/*background:red;*/position:relative;cursor:pointer;}
+		.image{display:block;width:100%;/*transition:0.7s;opacity:1;*/}
+		.overlay{position:absolute;background:#008cba;width:100%;height:100%;top:0;right:-100%;opacity:0;transition:0.7s;}
+		.text{color:#fff;position:relative;width:200px;height:30px;text-align:center;line-height:30px;background:blue;left:50%;top:50%;margin-left:-100px;margin-top:-15px;}
+		/*.container:hover .image{display:block;opacity:0.3;}*/
+		.container:hover .overlay{display:block;opacity:1;right:0;}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="../images/testimg.jpg" alt="testimg" class="image">
+		<div class="overlay">
+			<div class="text">Welcome to Paris!</div>
+		</div>
+	</div>
+</body>
+</html>

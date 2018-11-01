@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		img{display:inline-block;border:0;vertical-align:top;}
+		#galleryWrap{width:510px;margin:0 auto;text-align:center;}
+		#galleryWrap h1{margin:10px 0;}
+		#galleryWrap img{vertical-align:middle;width:400px;}
+	</style>
+	<script>
+		var num=1;
+		
+		function nextGallery(){
+			//num = num + 1;
+			num++;
+			if(num>7){num=1;}
+			
+			document.getElementById("gallery").src="../images/img"+num+".jpg";
+			
+		}
+		function prevGallery(){
+			//num = num - 1;
+			num--;
+			if(num<1){num=7;}
+			
+			document.getElementById("gallery").src="../images/img"+num+".jpg";
+			
+		}
+	</script>
+</head>
+<body>
+	<div id="galleryWrap">
+		<h1><이미지 넘기기></h1>
+		<p>
+			<a href="#prev" onclick="return prevGallery();">이전</a>
+			<img src="../images/img1.jpg" alt="갤러리그림" id="gallery">
+			<a href="#next" onclick="return nextGallery();">다음</a>
+		</p>
+	</div>
+</body>
+</html>

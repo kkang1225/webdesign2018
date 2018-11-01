@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>javascript object</title>
+</head>
+<body>
+	<p>car1</p>
+		<p id="data10"></p>
+		<p id="data20"></p>
+		<p id="data30"></p>
+	<p>car2</p>
+		<p id="data11"></p>
+		<p id="data21"></p>
+		<p id="data31"></p>
+	<p>car3</p>
+		<p id="data12"></p>
+		<p id="data22"></p>
+		<p id="data32"></p>
+	<!-- <p id="box1"></p>
+	<p id="box2"></p>
+	<p id="box3"></p> -->
+	<script>
+		// var car = {
+		// 	name:"Sonata",  //property
+		// 	speed:100,
+		// 	color:"red",
+		// 	speedup:function(){    //method
+		// 		return this.speed+10;
+		// 	}
+		// };
+		// var bus = new Object();
+		// bus.name = "Kia";
+		// bus.speed = 100;
+		// bus.color = "blue";
+		// bus.speedup=function(){
+		// 	    return this.speed+100;
+		// };
+
+		// var bname=document.getElementById("box1");
+		// bname.innerHTML="버스의 이름은 : " + bus.name;
+
+		// var bspeedup=document.getElementById("box2");
+		// bspeedup.innerHTML="버스의 속도는 : " + bus.speedup();
+
+		var car=[
+			{name:'sonata',color:'blue',speed:100},
+			{name:'jeep',color:'red',speed:70},
+			{name:'passat',color:'white',speed:150}
+		];
+		for(var i=0;i<3;i++){
+			//(var i=0;i<car.length;i++)
+			document.getElementById('data1'+i).innerHTML = '자동차이름 : '+car[i].name;
+			document.getElementById('data2'+i).innerHTML = '자동차색상 : '+car[i].color;
+			document.getElementById('data3'+i).innerHTML = '자동차속도 : '+car[i].speed;
+		}
+	</script>
+</body>
+</html>

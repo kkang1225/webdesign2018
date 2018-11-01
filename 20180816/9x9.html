@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		div.for4{background:skyblue;}
+		div:nth-child(2){background:green;}
+	</style>
+</head>
+<body>
+	<script>
+		// for(초기값;조건;증감;){
+		// 	실행문}
+		for(var i=2;i<10;i++){
+			//document.write("2 x "+i+" = "+"<br>");
+			document.write("<div class='for"+i+"'>")
+			for(var k=1;k<10;k++){
+				document.write(i+" x "+k+" = "+(i*k)+"<br>");
+
+			}
+			document.write("</div>");
+		}
+		//console.log(i);	
+	</script>
+</body>
+</html>

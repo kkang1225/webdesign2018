@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>set_interval</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		div{border:1px solid #999;margin:20px;margin-bottom:20px;}
+		#panel{border:1px dotted #ccc;font-size:20px;width:600px;}
+		span:nth-child(2n){background:orange;}
+	</style>
+	<script>
+		var nCount = 0;
+		var panel = null;
+		window.onload = function(){
+			init();  //초기화
+			start(); //타이머
+		}
+
+		function init(){
+			panel = document.getElementById("panel");
+		} //초기값
+
+		function start(){
+			setInterval(addTag,100);
+		}//타이머
+
+		function addTag(){
+			nCount++;
+			var span = document.createElement("span");
+			span.style.color = "#" + (parseInt(Math.random()*0xffffff)).toString(16);
+			span.style.fontSize = parseInt(Math.random()*40) + "px";
+			span.innerHTML=nCount;
+			span.style.display = "inline-block";
+			panel.appendChild(span);
+			window.scrollTo(0,window.document.body.scrollHeight)
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<div id="panel"></div>
+	</div>
+</body>
+</html>

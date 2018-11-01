@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>setinterval02</title>
+	<style>
+		#panel{width:600px;height:300px;border:1px solid #999;position:relative;}
+		#bar{position:absolute;left:50px;top:190px;width:500px;height:20px;background:#f30;}
+		#img1{position:absolute;left:50px;top:120px;}
+		.view{transform:rotateY(180deg);}
+	</style>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		var nStartX;
+		var nEndX;
+		var nCurrentX;
+		var nStep;
+		var nTimerId;
+		var $objIMG;
+
+		$(document).ready(function(){
+			init();
+			initEventListener();
+		});
+		function init(){
+			var $objBar = $("#bar");
+			nStartX = $objBar.position().left;
+			nEndX = $objBar.width() + nStartX - 120;
+			nCurrentX = nStartX;
+			nStep = 2;
+			nTimerId = 0;
+			$objIMG = $("#img1");
+		};
+		function initEventListener(){
+			$("#btn_start").on("click",function(){
+				start();
+			});
+			$("#btn_stop").on("click",function(){
+				stopMove();
+			});
+		};
+		function start(){
+			if(nTimerId == 0){
+			nTimerId = setInterval(startMove,30);
+			console.log(nTimerId);
+			}
+		};
+		function startMove(){
+			nCurrentX += nStep;
+			if(nCurrentX > nEndX){
+				nCurrentX = nEndX;
+				nStep = -2;
+				$objIMG.addClass("view");
+				//$objIMG.attr("class","view");
+			}
+			if(nCurrentX < nStartX){
+				nCurrentX = nStartX;
+				nStep = 2;
+				$objIMG.removeClass("view");
+				//$objIMG.attr("class","");
+			}
+			$objIMG.css("left",nCurrentX) 
+		};
+		function stopMove(){
+			if(nTimerId != 0){
+			clearInterval(nTimerId);
+			nTimerId = 0;
+			}
+		};
+	</script>
+</head>
+<body>
+	<div>
+		<div id="panel">
+			<div id="bar"></div>
+			<div id="img1"><img src="../images/car.png" alt="자동차"></div>
+		</div>
+		<div id="nav">
+			<button id="btn_start">시작</button>
+			<button id="btn_stop">멈춤</button>
+		</div>
+	</div>
+</body>
+</html>

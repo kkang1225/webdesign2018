@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>function</title>
+	<style>
+		#box{width:200px;height:200px;background:skyblue;}
+	</style>
+</head>
+<body>
+	<script>
+		//function 함수이름명(변수){
+			
+		//}
+		function nameId(){
+			document.getElementById("box").innerHTML="Welcome";
+			document.getElementById("box").style.background="red";
+			
+		}
+		function nameId1(){
+			document.getElementById("box").innerHTML="Welcome";
+			document.getElementsByTagName("body")[0].style.background="url(../testimg.jpg)";
+		}
+	</script>
+	<div id="box">Hello!</div>
+	<button type="button" onclick="nameId()">Try it</button><br>
+	<button type="button" onclick="nameId1()">Try it</button>
+</body>
+</html>

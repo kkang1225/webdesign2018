@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<link rel="stylesheet" href="./css/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".sliderwrapper").bxSlider()
+		});
+	</script>
+	<style>
+		.wrap{width:400px;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="sliderwrapper">
+			<li><img src="../images/nuestw.jpg" alt=""></li>
+			<li><img src="../images/color2.jpg" alt=""></li>
+			<li><img src="../images/color.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>

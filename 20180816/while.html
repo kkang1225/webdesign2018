@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>while</title>
+</head>
+<body>
+	<script>
+		var x = 1;
+		var sum = 0;
+		while(1){
+			sum+=x;
+			x++;
+			document.write(sum+"<br>");
+			if(x==1001){
+				break;
+			}
+			console.log(sum);
+		}
+		document.write("1~1000까지의 합 = "+sum);
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float layer</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a:link,a:visited{color:#000;}
+		a{text-decoration:none;}
+		body{font:12px/1.5 "굴림",Gulim;margin:10px;}
+
+		#container{width:1000px;background:lightgreen;/*overflow:hidden;*/margin:0 auto;}
+		#container:after{content:"";display:block;clear:both;}
+		.menu{width:200px;padding:10px;float:left;}
+		.content{width:700px;padding:10px;border-left:1px solid #ccc;float:right;}
+		.active{font-size:16px;font-weight:bold;color:deeppink !important;}
+		
+
+	</style>
+</head>
+<body>
+	<!-- div>#container>(div.menu>ul>li*3>a[href=""]>{menu$})+(div.content>p>lorem20)^div.footer>address>{&copy;2018 Copyright All right reserved.} -->
+	<div>
+		<div id="container">
+			<div class="menu">
+				<ul>
+					<li><a href="menu1.html">회사소개</a></li>
+					<li><a href="menu2.html">제품안내</a></li>
+					<li><a href="menu3.html" class="active">커뮤니티</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio eos quo temporibus suscipit natus alias sint, voluptatum saepe impedit molestiae sunt, officiis velit perspiciatis qui nam, dicta rerum dolorem ipsum quis. Sed ducimus qui provident culpa possimus aspernatur dolorum ab eligendi minima, itaque id fugiat quisquam vero nihil, cupiditate aliquam iusto nemo minus et odit vel unde dolore adipisci harum! Praesentium tempore unde non omnis, asperiores optio quod nobis reiciendis necessitatibus laborum adipisci rem id earum mollitia at temporibus possimus magni labore minima culpa tempora. Similique fugiat ab, ipsa quibusdam id, quam optio vitae odio, dignissimos ipsam doloremque ratione asperiores autem culpa laboriosam pariatur reprehenderit harum quia! Officiis enim expedita praesentium tempore non in voluptatum facere fuga, asperiores odio ipsam aliquid, earum natus libero pariatur. Aliquid repudiandae aperiam illum accusantium repellat magni asperiores voluptatum, numquam nobis nesciunt, sit repellendus esse, dolor fugiat nam doloribus ab illo debitis delectus pariatur quas distinctio culpa. Tempora temporibus tenetur perferendis, laudantium mollitia aspernatur, perspiciatis libero voluptate tempore impedit a sed rem consequuntur, vero quod odio obcaecati, repudiandae voluptates? Ullam vero, recusandae optio consequatur. Dolores vitae unde doloremque corporis perspiciatis ipsa minima officia iure ab deleniti quo, obcaecati sapiente harum numquam iusto a, culpa sunt.</p>
+			</div>
+		</div>
+		<div class="footer">
+			<address>&copy;2018 Copyright All right reserved.</address>
+		</div>
+	</div>
+</body>
+</html>

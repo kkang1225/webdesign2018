@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>travel</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div id="container_wrap">
+		<div id="header_wrap">
+			<div class="header">
+				<img src="./images/tropical.png" alt="야자수">
+				<h2 class="logo"><a href="#">TRAVEL</a></h2>
+				<h3><a href="#">하이미디어</a></h3>
+				<form name="search" method="get">
+					<input type="text" name="search" id="top" maxlength="20" placeholder="SEARCH   검색어를 입력하세요.." class="sch_input" required>
+					<button type="submit" value="검색" class="sch_btn"><i class="fas fa-search"></i></button>
+				</form>
+				<h2 class="tel">+82 02 1234 5678</h2>
+				<ul class="clearfix">
+					<li><a href="#"><img src="./images/facebook.jpg" alt="sns_icon"></a></li>
+					<li><a href="#"><img src="./images/twitter.jpg" alt="sns_icon"></a></li>
+					<li><a href="#"><img src="./images/B.jpg" alt="B_icon"></a></li>
+					<li><a href="#"><img src="./images/in.jpg" alt="in_icon"></a></li>
+				</ul>
+			</div>
+			<div id="gnb">
+				<div class="main_gnb">
+					<ul class="clearfix">
+						<li><a href="#">여행도시</a></li>
+						<li><a href="#">호텔예약</a></li>
+						<li><a href="#">렌트카</a></li>
+						<li><a href="#">여행TIP<i class="fas fa-comment"></i></a></li>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">커뮤니티</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section>
+			<div id="container_wrap">
+				<div class="container clearfix">
+					<div class="box01 clearfix">
+						<ul class="tab_menu">
+							<li>
+								<a href="#"><i class="fas fa-plane"></i>공항예약</a>
+							</li>
+							<li><a href="#"><i class="fas fa-hotel"></i>호텔예약</a></li>
+							<li><a href="#"><i class="fas fa-car-side"></i>렌트카</a></li>
+							<li><a href="#"><i class="fas fa-suitcase-rolling"></i>휴양지</a></li>
+						</ul>
+						<div id="hidden_menu" class="active">
+
+							<form action="" name="info" id="info" method="get" class="title">
+							<ul class="hidden">
+								<li>
+								
+										<div>
+											<div><label for="country" >가고싶은 나라를 선택하세요.</label></div>
+											<input type="text" name="country" id="country" required placeholder="선택하세요." class="one">
+										</div>
+
+								</li>
+								<li>
+									
+										<div>
+											<label for="departure">출발일</label>
+											<input type="date" name="departure" id="departure" required placeholder="선택하세요.">
+										</div>
+
+										<div>
+											<label for="arrival">도착일</label>
+											<input type="date" name="arrival" id="arrival" required">
+										</div>
+								</li>
+								<li>
+
+											<div><label for="departure">좌석등급</label>
+											<select name="grade" id="grade">
+												<option value="first">일등석</option><option value="business">비지니스석</option><option value="economy">일반석</option>	
+											</select>
+										</div>
+
+
+
+										<div>
+											<label for="child">성인</label>
+											<input type="number" name="child" id="child" required placeholder="1">
+										</div>
+
+										<div>
+											<div><label for="adult">소인</label></div>
+											<input type="number" name="adult" id="adult" required placeholder="1">
+										</div>
+									
+								</li>
+							</ul>
+							<div class="btn_wrap">
+								<button type="submit" value="검색" class="btn"><i class="fas fa-search"></i>검색하기</button>
+							</div>
+
+						</form>
+						</div>
+					</div>
+					<div class="text">
+						<h1>TRAVEL GO</h1><br>
+						<h2>지금, 여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</h2>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card01 clearfix">
+						<div class="france">
+							<div class="explain clearfix">
+								<a href="#">프랑스</a>
+								 <a href="#">\1,900,000~</a>      
+								 <a href="#"><i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>
+						<div class="japan">
+							<div class="explain">
+							<a href="#">일본</a>
+							<a href="#">\890,000~</a>    
+							<a href=""><i class="fas fa-chevron-right"></i> </a>
+							</div>
+						</div>
+					</div>
+						<div class="card02 clearfix">
+							<div class="hotel">
+								<div class="explain3">
+									<a href="#">HILLTON HOTEL (PARIS)</a>
+									<a href="#">★★★☆☆</a>
+								</div>
+							</div>
+							<div class="disney">
+								<div class="explain">
+									<a href="#">관광명소(디즈니랜드)</a>
+									<a href="#">★★★☆☆</a>
+								</div>
+							</div>
+							<div class="weather">
+								<p>TOKYO</p>
+								<div class="explain5">
+									<a href="#">20℃ 구름조금</a>
+									<a href="#">습도60% 바람 남남동 2m/s</a>
+								</div>
+							</div>
+							<div class="review">
+								<p>"해외여행은 처음이었는데,<br>
+									하이미디어여행 덕분에 무사히<br>
+								다녀올 수 있었어요."</p>
+								<p>프랑스 파리 자유여행</p>
+								<p>★★★☆☆</p>
+								<div class="explain6">
+									<a href="#">facebook 여행후기</a>
+									<a href="#">(임정희님)</a>
+								</div>
+							</div>
+						</div>
+						<div class="card03 clearfix">
+							<div class="information">
+								<div class="information_box">
+									<img src="./images/travel.png" alt="물안경">
+									<a href="#">여행정보</a>
+									<p>다양한 나라의 명소와 맛집 등<br>
+										상세한 정보를 볼 수 있습니다.
+									</p>
+									<a href="#" class="plus"><i class="fas fa-plus-circle"></i></a>
+								</div>
+							</div>
+							<div class="food">
+								<div class="food_box">
+									<a href="#"><i class="fas fa-plus-circle"></i></a>
+									<i class="fas fa-utensils"></i>
+									<a href="#">맛집정보</a>
+									<p>다양한 나라의 명소와 맛집 등<br>
+											상세한 정보를 볼 수 있습니다.</p>
+								</div>
+							</div>
+							<div class="stay">
+								<div class="stay_box">
+									<a href="#"><i class="fas fa-plus-circle"></i></a>
+									<i class="fas fa-home"></i>
+									<a href="#">숙박정보</a>
+									<p>다양한 나라의 명소와 맛집 등<br>
+												상세한 정보를 볼 수 있습니다.</p>
+								</div>
+							</div>
+							<div class="reviewer">
+								<div class="reviewer_box">
+									<img src="./images/thumbs_up.png" alt="thumbs_up">
+									<a href="#">여행자후기</a>
+									<p>다양한 나라의 명소와 맛집 등<br>
+													상세한 정보를 볼 수 있습니다.</p>
+									<a href="#"><i class="fas fa-plus-circle"></i></a>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div id="footer_wrap">
+			<div class="main_footer">
+				<div class="footer">
+					<a href="#">이용약관</a>
+					<a href="#">개인정보취급방침</a>
+					<a href="#">사이트맵</a>
+					<a href="#">고객센터</a>
+					<a href="#">광고 및 제휴문의</a>
+				</div>
+				<div class="bottom">
+					<p>
+						123-456서울특별시 구로구 구로동 (주)하이미디어 사업자등록번호: 123-45-678910 대표이사:홍길동 대표번호:02-1234-5678
+					</p>
+					<p>COPYRIGHTⓒ2014 HIMEDIA TOUR ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

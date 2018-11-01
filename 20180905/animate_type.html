@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>thisisneverthat</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<style>
+		#contents{text-align:center;width:100%;font-style:italic;color:#fff;}
+		#contents>div#section1{height:100vh;line-height:100vh;background:#000;font-size:40px;}
+
+		.sec1 h2 span{opacity:0;}
+
+		.sec1 h2 span.show{display:inline-block;animation-name:ani1;animation-duration:0.5s;animation-fill-mode:forwards;}
+
+		@keyframes ani1{
+			0%{opacity:0;transform:translateX(100px) scale(0.5);}
+			100%{opacity:1;transform:translateX(0px) scale(1);}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$(".sec1 h2 span").each(function(i){
+				setTimeout(function(){
+					$(".sec1 h2 span").eq(i).addClass("show");
+				},100*(i+1));
+			});
+		});
+	</script>
+</head>
+<body>
+	<section id="contents">
+		<div id="section1">
+			<div class="container">
+				<div class="sec1">
+					<h2>
+						<span class="show" >t</span><span>h</span><span>i</span><span>s</span> <span>i</span><span>s</span> <span>n</span><span>e</span><span>v</span><span>e</span><span>r</span> <span>t</span><span>h</span><span>a</span><span>t</span>
+					</h2>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>animation</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		.box1{width:100px;height:100px;background:#B0C4DE;position:absolute;animation-name:box;animation-duration:2s;animation-timing-function:linear;}
+		@keyframes box{from{left:0;}
+						30%{width:300px;height:300px;left:500px;}
+						60%{width:100px;height:100px;left:600px;}
+						to{left:1000px;background:#191970;width:300px;height:300px;}}
+		img{display:block;width:100%;}
+	</style>
+</head>
+<body>
+	<div class="box1"><img src="../testimg.jpg" alt=""></div>
+</body>
+</html>

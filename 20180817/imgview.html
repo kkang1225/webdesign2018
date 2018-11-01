@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>imgview</title>
+	<link rel="stylesheet" href="../CSS/reset.css">
+	<style>
+		.wrap:after{content:"";display:block;clear:both;}
+		.box{width:200px;height:200px;border-radius:50%;background:url(../images/friends.jpg) no-repeat 50% 10%;
+			box-sizing:border-box;cursor:pointer;transition:1.5s;float:left;margin:10px 20px;}
+		.box:hover{border:5px solid purple;box-shadow:-10px 5px 50px purple;background:url(../images/whoyou.jpg) 15% 50%;}
+	</style>
+	<script>
+		function linkClick(){
+			location.href='http://www.naver.com';
+		}
+
+		$(document).ready(function(){
+
+		});
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box" onclick="linkClick()"></div>
+		<div class="box" onclick="linkClick()"></div>
+	</div>
+</body>
+</html>

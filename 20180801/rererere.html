@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		*{margin:0;padding:0;}
+		ul,li{list-style:none;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:black;}
+		
+		#container_wrap{width:1200px;margin:0 auto;}
+		#container_wrap:after{content:"";display:block;clear:both;}
+		#container_wrap .logo{float:left;width:20%;height:57px;}
+		#nav{float:right;width:80%;height:57px;}
+		#nav:after{content:"";display:block;clear:both;}
+		#nav>li{float:left;width:14.28%;height:57px;background:#fff;}
+		#nav>li>a{display:block;text-align:center;line-height:57px;font-weight:bold;}
+		#nav>li>a:hover{font-weight:bold;color:skyblue;}
+		.sub{display:none;}
+		.sub>li{width:100%;height:30px;background:#fff;}
+		.sub>li>a{display:block;text-align:center;line-height:30px;}
+		.sub>li>a:hover{font-weight:bold;color:skyblue;}
+		#nav>li:nth-child(1):hover .sub{display:block;}
+		#nav>li:nth-child(2):hover .sub{display:block;}
+		#nav>li:nth-child(3):hover .sub{display:block;}
+		#nav>li:nth-child(4):hover .sub{display:block;}
+		#nav>li:nth-child(5):hover .sub{display:block;}
+		#nav>li:nth-child(6):hover .sub{display:block;}
+		#nav>li:nth-child(7):hover .sub{display:block;}
+		.content{width:100%;height:300px;background:#000;}
+	</style>
+</head>
+<body>
+	<div id="container_wrap">
+		<h1 class="logo"><img src="./header_logo.gif" alt=""></h1>
+		<ul id="nav">
+			<li>
+				<a href="#">Company</a>
+				<ul class="sub">
+					<li><a href="">submemu0101</a></li>
+					<li><a href="">submemu0102</a></li>
+					<li><a href="">submemu0103</a></li>
+					<li><a href="">submemu0104</a></li>
+					<li><a href="">submemu0105</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">프렌차이즈</a>
+				<ul class="sub">
+					<li><a href="">submemu0201</a></li>
+					<li><a href="">submemu0202</a></li>
+					<li><a href="">submemu0203</a></li>
+					<li><a href="">submemu0204</a></li>
+					<li><a href="">submemu0205</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">브랜드</a>
+				<ul class="sub">
+					<li><a href="">submemu0301</a></li>
+					<li><a href="">submemu0302</a></li>
+					<li><a href="">submemu0303</a></li>
+					<li><a href="">submemu0304</a></li>
+					<li><a href="">submemu0305</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">MENU</a>
+				<ul class="sub">
+					<li><a href="">submemu0401</a></li>
+					<li><a href="">submemu0402</a></li>
+					<li><a href="">submemu0403</a></li>
+					<li><a href="">submemu0404</a></li>
+					<li><a href="">submemu0405</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">EVENT</a>
+				<ul class="sub">
+					<li><a href="">submemu0501</a></li>
+					<li><a href="">submemu0502</a></li>
+					<li><a href="">submemu0503</a></li>
+					<li><a href="">submemu0504</a></li>
+					<li><a href="">submemu0505</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">CULTURE</a>
+				<ul class="sub">
+					<li><a href="">submemu0601</a></li>
+					<li><a href="">submemu0602</a></li>
+					<li><a href="">submemu0603</a></li>
+					<li><a href="">submemu0604</a></li>
+					<li><a href="">submemu0605</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">COMMUNITY</a>
+				<ul class="sub">
+					<li><a href="">submemu0701</a></li>
+					<li><a href="">submemu0702</a></li>
+					<li><a href="">submemu0703</a></li>
+					<li><a href="">submemu0704</a></li>
+					<li><a href="">submemu0705</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="content"></div>
+</body>
+</html>

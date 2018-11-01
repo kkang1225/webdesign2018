@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>position_header</title>
+	<style>
+		*{margin:0;padding:0;}
+		a{text-decoration:none;}
+		a:link,a:visited{color:#000000;}
+		ul,li{list-style:none;}
+
+		#header_wrap{width:1000px;height:200px;margin:0 auto;position:relative;}
+		#header_wrap h1{width:100px;height:100px;text-align:center;line-height:100px;background:#dcdcdc;position:absolute;left:0px;top:0;}
+
+		#util_menu{position:absolute;right:0;top:10px;}
+		#util_menu ul{overflow:hidden;}
+		#util_menu li{float:left;border-right:1px solid #000000;}
+		#util_menu li:last-child{border:none;}
+		#util_menu a{display:block;width:100px;height:20px;text-align:center;line-height:20px;}
+		#util_menu a:hover{font-weight:bold;}
+
+		#gnb_menu{position:absolute;bottom:0;}
+		#gnb_menu ul{overflow:hidden;}
+		#gnb_menu li{float:left;background:#dcdcdc;}
+		#gnb_menu a{display:block;width:200px;height:40px;text-align:center;line-height:40px;}
+		#gnb_menu a:hover{background-color:#000000;color:#ffffff;}
+	</style>
+</head>
+<body>
+	<!-- div#header_wrap>(h1>{LOGO})+(div#util_menu>ul>li*3>a[href="3"]>{menu$})+(nav#gnb_menu>ul>li*5>{MENU$}) -->
+	<div id="header_wrap">
+		<h1>LOGO</h1>
+		<div id="util_menu">
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">LOGIN</a></li>
+				<li><a href="#">SITEMAP</a></li>
+			</ul>
+		</div>
+		<nav id="gnb_menu">
+			<ul>
+				<li><a href="#">MENU1</a></li>
+				<li><a href="#">MENU2</a></li>
+				<li><a href="#">MENU3</a></li>
+				<li><a href="#">MENU4</a></li>
+				<li><a href="#">MENU5</a></li>
+			</ul>
+		</nav>
+	</div>
+</body>
+</html>

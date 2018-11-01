@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>select_fruits</title>
+	<script>
+		function drawImage(){
+			var sel = document.getElementById("fruits");
+			var img = document.getElementById("fruitimages");
+
+			img.src = sel.options[sel.selectedIndex].value;
+		}
+	</script>
+</head>
+<body onload="drawImage()">
+	<form action="">
+		<select id="fruits" onchange="drawImage()">
+			<option value="../images/01.jpg" selected>딸기</option>
+			<option value="../images/02.jpg" >바나나</option>
+			<option value="../images/03.jpg">사과</option>
+		</select>
+	</form><br>
+	<img src="../images/02.jpg" alt="fruits" id="fruitimages">
+</body>
+</html>
